@@ -1,0 +1,991 @@
+--------- beginning of main
+09-15 23:13:33.987  1806  1806 I WifiHAL : Get link layer stats
+09-15 23:13:33.987  1806  1806 I WifiHAL : GetLinkStatsCommand::create
+09-15 23:13:33.987  1806  1806 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 40, vendor_id=0x1a11, subcmd=0x1200, res=0
+09-15 23:13:33.987  1806  1806 I android.hardware.wifi@1.0-service-lazy: WifiCommand::requestResponse err=-95
+09-15 23:13:33.987  1806  1806 I WifiHAL : wifi_get_link_stats: result=-3
+09-15 23:13:33.988  1434  1683 E WifiVendorHal: $r8$lambda$s6w0pmKyq6-tDdqCEDbOV_xqgVE(l.1179) failed {.code = ERROR_NOT_SUPPORTED, .description = }
+09-15 23:13:33.991  1434 15469 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 19336, isSameBssidAndFreq true
+09-15 23:13:33.992  1434  1759 I SemWifiLinkQualityMonitor: Link Qos query: inf. ms / 0 Mbps
+09-15 23:13:34.020  1434 10545 D WifiConnectivityMonitor.DnsThread:  [|204] [] [] []
+09-15 23:13:34.021  1434  1777 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 204
+09-15 23:13:34.022  1434  1775 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+09-15 23:13:34.022  1434  1775 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+09-15 23:13:34.022  1434  1775 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+09-15 23:13:34.022  1434  1775 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 23 
+--------- beginning of system
+09-15 23:13:34.022  1434  1775 D SettingsProvider: isChangeAllowed() : name = wifi_wcm_qos_sharing_score_summary
+09-15 23:13:34.022  1434  1775 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+09-15 23:13:34.022  1434  2926 V WifiProfileShare.Caster: update wips network, size: 0
+09-15 23:13:34.023  1434  2926 D WifiProfileShare: nearby scanning settings run
+09-15 23:13:34.023  1434  2926 D WifiProfileShare: network score provider settings enabled
+09-15 23:13:34.023  1434  2926 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 23 
+09-15 23:13:34.023  1434  2926 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+09-15 23:13:34.023  1434  2926 I WifiProfileShare.Caster: current network type: 0, score: [26, 26, 23]
+09-15 23:13:34.023  1434  2926 V WifiProfileShare.Cache: update network score cc:2d:21:**:**:48
+09-15 23:13:34.023  1434  2926 D WifiProfileShare.ScanMatcher: getMcfDataList size:1
+09-15 23:13:34.024  1434  2926 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:fe:82:84, qosData:7b after:type:QOS, pBssid:fe:82:84, qosData:7b
+09-15 23:13:34.024  1434  2926 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+09-15 23:13:34.025  1434  2926 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+09-15 23:13:34.025  1434  2926 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+09-15 23:13:34.025  1434  2926 D WifiProfileShare.MCF: success update QosData !
+09-15 23:13:34.025  1434  2926 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+09-15 23:13:34.025  1434  2926 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+09-15 23:13:34.025  1434  2926 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:1
+09-15 23:13:34.162  5232  5232 I adbd    : adbd service requested 'shell,v2,raw:am start -n com.sortiva/.MainActivity'
+09-15 23:13:34.211  1434  1473 I SemDvfsHyPerManager: acquire hyper - APP_LAUNCH/1434@265, type = -999
+09-15 23:13:34.211  1434  2031 D ActivityTaskManager: startActivityAsUser: callingPid=10550, callingUid=2000, caller=com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:1816 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:3747 com.android.server.am.ActivityManagerShellCommand.runStartActivity:656 com.android.server.am.ActivityManagerShellCommand.onCommand:222 com.android.modules.utils.BasicShellCommandHandler.exec:97 android.os.ShellCommand.exec:38 com.android.server.am.ActivityManagerService.onShellCommand:11276 
+09-15 23:13:34.211   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1444415  [1434 / 265]    HINT : APP_LAUNCH    list : 
+09-15 23:13:34.212   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.213  1434  2031 D CompatibilityChangeReporter: Compat change id reported: 161252188; UID 10336; state: DISABLED
+09-15 23:13:34.213  1434  1462 I ChimeraSystemEventListener: appLaunchIntent package name is: com.sortiva
+09-15 23:13:34.213  3404  3404 I SemDvfsHyPerManager: acquire hyper - APP_START_SHORT/3404@12, type = -999
+09-15 23:13:34.213  3404  3404 I R0      : limitGPUFreq:: freq = -1
+09-15 23:13:34.213  3404  3404 I R0      : limitCPUFreq:: freq = -1
+09-15 23:13:34.213   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15452 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15452
+09-15 23:13:34.214   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:34.214  1434  2031 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.sortiva/.MainActivity} from uid 2000
+09-15 23:13:34.214   851   880 I mtkpower_client: ret_hdl:15452
+09-15 23:13:34.214   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.215   851   880 I mtkpower_client: ret_hdl:15453
+09-15 23:13:34.215   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.215   856   896 I libPowerHal: [perfLockAcq] idx:1 hdl:15453 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15453
+09-15 23:13:34.215  1434  2031 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@163398883
+09-15 23:13:34.215   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:34.215  1434  2031 D [secipm]: mSecIpmManager Preload com.sortiva dex files
+09-15 23:13:34.216   851   880 I mtkpower_client: ret_hdl:15454
+09-15 23:13:34.216   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15454 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15454
+09-15 23:13:34.216   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5836248  [3404 / 12]    HINT : APP_START    list : [TIMEOUT / 1500] 
+09-15 23:13:34.216  1434  2031 D ActivityTaskManager: TaskLaunchParamsModifier:task=null activity=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t-1} display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@163398883 non-freeform-display display-area=DefaultTaskDisplayArea@163398883 maximized-bounds
+09-15 23:13:34.216   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000, param:0
+09-15 23:13:34.216   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000 param:0
+09-15 23:13:34.217  1434  2385 I SemDvfsHyPerManager: acquire hyper - AMS_APP_SWITCH/1434@26, type = -999
+09-15 23:13:34.217   851   880 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 5808940
+09-15 23:13:34.217   851   880 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 5802123
+09-15 23:13:34.217   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1066556  [1434 / 26]    HINT : AMS_ACT_SWITCH    list : 
+09-15 23:13:34.218   851   880 I mtkpower_client: perf_lock_rel, hdl:15452, tid:880
+09-15 23:13:34.218  3404  3404 I SemDvfsHyPerManager: acquire hyper - APP_START_SHORT/3404@12, type = -999
+09-15 23:13:34.218  1434  2385 D ActivityManagerPerformance: AMP_acquire() APP_SWITCH
+09-15 23:13:34.218   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.218   908  1971 I SurfaceFlinger: id=41295 createSurf flag=24004, Task=2702#41295
+09-15 23:13:34.218   856   896 I libPowerHal: [perfLockRel] hdl:15452, idx:0
+09-15 23:13:34.218   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:34.219   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:34.219  1434  2385 E libprocessgroup: Failed to find cgroup for tid 2385
+09-15 23:13:34.219  1434  2385 W libprocessgroup: Failed to apply DoSomethingOlaf task profile: Try again
+09-15 23:13:34.219   856   896 I libPowerHal: [perfLockAcq] idx:3 hdl:15455 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15455
+09-15 23:13:34.219   851   880 I mtkpower_client: ret_hdl:15455
+09-15 23:13:34.219   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:34.219   851   880 I mtkpower_client: perf_lock_rel, hdl:15453, tid:880
+09-15 23:13:34.220   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.220   856   896 I libPowerHal: [perfLockRel] hdl:15453, idx:1
+09-15 23:13:34.220   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:34.220  1434  2031 D ActivityTaskManager: TaskLaunchParamsModifier:task=Task{e8f7d6a #2702 type=standard A=10336:com.sortiva U=0 visible=false visibleRequested=false mode=fullscreen translucent=true sz=0} activity=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t-1} display-from-task=0 display-id=0 display-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@163398883 non-freeform-display display-area=DefaultTaskDisplayArea@163398883 maximized-bounds
+09-15 23:13:34.220   851   880 I mtkpower_client: ret_hdl:15456
+09-15 23:13:34.220   851   880 I mtkpower_client: perf_lock_rel, hdl:15454, tid:880
+09-15 23:13:34.220   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15456 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15456
+09-15 23:13:34.221   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:34.221   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.221   908  1971 I SurfaceFlinger: id=41296 createSurf flag=80004, ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}#41296
+09-15 23:13:34.221   856   896 I libPowerHal: [perfLockRel] hdl:15454, idx:2
+09-15 23:13:34.221   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000, param:-1
+09-15 23:13:34.221   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000 param:-1
+09-15 23:13:34.221   851   880 I mtkpower_client: ret_hdl:15457
+09-15 23:13:34.221   856   896 I libPowerHal: [perfLockAcq] idx:1 hdl:15457 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15457
+09-15 23:13:34.222   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000, param:0
+09-15 23:13:34.222   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000 param:0
+09-15 23:13:34.222   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5836248  [3404 / 12]    HINT : APP_START    list : [TIMEOUT / 1500] 
+09-15 23:13:34.222  1434  2031 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=false r=ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339} caller=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2510 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:602 com.android.server.wm.TaskDisplayArea.positionChildAt:537 com.android.server.wm.Task.moveToFrontInner:6053 com.android.server.wm.Task.moveToFront:6019 com.android.server.wm.ActivityStarter.startActivityInner:2924 
+09-15 23:13:34.223   856   870 I mtkpower@impl: [setMode] type:5, enabled:1
+09-15 23:13:34.223   908   908 I SurfaceFlinger: SFWD update time=127471811494750
+09-15 23:13:34.224  1434  2031 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.Task.startActivityLocked:6595 com.android.server.wm.ActivityStarter.startActivityInner:2980 com.android.server.wm.ActivityStarter.startActivityUnchecked:2470 
+09-15 23:13:34.224  1434  2031 V WindowManager: Checking theme of starting window: 0x7f0b000a
+09-15 23:13:34.224  1434  2031 V WindowManager: Translucent=false Floating=false ShowWallpaper=false Disable=false
+09-15 23:13:34.224  1434  2031 V WindowManager: Creating SplashScreenStartingData
+09-15 23:13:34.224  1434  2031 D ActivityTaskManager: Add starting com.android.server.wm.ActivityRecord$AddStartingWindow@f3c4af8: typeParam=139
+09-15 23:13:34.224  1434  2031 V WindowManager: Add starting com.android.server.wm.ActivityRecord$AddStartingWindow@f3c4af8: startingData=com.android.server.wm.SplashScreenStartingData@f53abd1
+09-15 23:13:34.224  1434  2031 V WindowManager: Added starting ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}: startingWindow=null startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@9a00636
+09-15 23:13:34.226   842   842 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:1.337413,dur:29160.77,max:28740.71,min:9.82  
+09-15 23:13:34.227   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409720, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:34.228   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409720, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290)
+09-15 23:13:34.228  1434  2043 I AppOps  : updateUidProcState uid: 10045 procState: 1 capability:15
+09-15 23:13:34.228   908  1971 D SurfaceFlinger: [SF client] NEW(0xb400007b1f989d20) for (1885:com.android.systemui)
+09-15 23:13:34.229  1434  2031 I Pageboost: stop alp
+09-15 23:13:34.229  1434  2031 I SemDvfsHyPerManager: acquire hyper - AMS_APP_LAUNCH/1434@15, type = -999
+09-15 23:13:34.228  1050  2976 I CameraService: onUidStateChanged: uid=10045, procState is changed. (0 -> 1)
+09-15 23:13:34.229  2871  2871 E pageboostd: Received HALT command code 2
+09-15 23:13:34.230   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1050540  [1434 / 15]    HINT : AMS_APP_LAUNCH    list : 
+09-15 23:13:34.230  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.230   851   880 I mtkpower_client: perf_lock_rel, hdl:15455, tid:880
+09-15 23:13:34.231   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.231   856   896 I libPowerHal: [perfLockRel] hdl:15455, idx:3
+09-15 23:13:34.231   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:34.231   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:34.231  3404  3404 I SemDvfsHyPerManager: acquire hyper - APP_START/3404@14, type = -999
+09-15 23:13:34.233  2276  2276 I BaseActivity: removeActivityFlags, flags : 16
+09-15 23:13:34.233  2276  2276 I BaseActivity: removeActivityFlags, flags : 6
+09-15 23:13:34.234  2276  2276 I DragController: endDrag
+09-15 23:13:34.234   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15458 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15458
+09-15 23:13:34.234  2276  2276 W LauncherAppWidgetHost: setShouldListenFlag, mFlags:15 flag:resume on:false isFront:false
+09-15 23:13:34.234  1885  1961 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+09-15 23:13:34.234   851   880 I mtkpower_client: ret_hdl:15458
+09-15 23:13:34.234   851   880 I mtkpower_client: perf_lock_rel, hdl:15456, tid:880
+09-15 23:13:34.234  2276  2276 I SPayUpdater: updateSpayHandler launcher activity is paused false
+09-15 23:13:34.234   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:34.235  1434  1462 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10336; state: DISABLED
+09-15 23:13:34.235  1434  1462 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10336; state: DISABLED
+09-15 23:13:34.235  1434  1462 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10336; state: DISABLED
+09-15 23:13:34.235  1434  1462 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10336; state: ENABLED
+09-15 23:13:34.235   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.235   856   896 I libPowerHal: [perfLockRel] hdl:15456, idx:0
+09-15 23:13:34.235   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:34.236  1434  1474 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10336; state: ENABLED
+09-15 23:13:34.238  1434  2858 D MARsPolicyManager: onPackageResumedFG pkgName = com.sortiva, userId = 0
+09-15 23:13:34.238  1434  2858 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_OPEN, TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.TaskFragment.resumeTopActivity:1573 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.resumeTopActivityInnerLocked:6451 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:6352 
+09-15 23:13:34.239   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15459 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15459
+09-15 23:13:34.239   851   880 I mtkpower_client: ret_hdl:15459
+09-15 23:13:34.239   851   880 I mtkpower_client: perf_lock_rel, hdl:15457, tid:880
+09-15 23:13:34.239   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:34.239   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.239   856   896 I libPowerHal: [perfLockRel] hdl:15457, idx:1
+09-15 23:13:34.239   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000, param:-1
+09-15 23:13:34.239  1434  1434 I CocktailBarManagerServiceContainer: handleMessage: entry what = 6
+09-15 23:13:34.239  1434  1434 I CocktailBarManagerServiceImpl: notePauseComponent : no active host
+09-15 23:13:34.240   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000 param:-1
+09-15 23:13:34.240   851   880 I mtkpower_client: ret_hdl:15460
+09-15 23:13:34.240   856   896 I libPowerHal: [perfLockAcq] idx:1 hdl:15460 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15460
+09-15 23:13:34.240   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000, param:0
+09-15 23:13:34.240   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000 param:0
+09-15 23:13:34.240   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5843085  [3404 / 14]    HINT : APP_START    list : 
+09-15 23:13:34.240  1434  1462 D SGM:FgCheckThread: notePauseComponent(), received pkgName: com.sec.android.app.launcher, userId: 0
+09-15 23:13:34.240  1434  2858 D WindowManagerServiceExt: notifyOccludeChangeNotice: cn=ComponentInfo{com.sortiva/com.sortiva.MainActivity} occludesParent=true inMultiWindow=false styleFloating=false caller=com.android.server.wm.WindowManagerServiceExt.updateOccludeTargetIfNeeded:1402 com.android.server.wm.DisplayContent.ensureActivitiesVisible:7532 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2248 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2229 com.android.server.wm.TaskFragment.completePause:2076 
+09-15 23:13:34.243  2276  2276 I TopTaskTracker: onTaskMovedToFront : taskId = 2702
+09-15 23:13:34.244  1434  3435 D InputTransport: Input channel constructed: '48141d3', fd=156
+09-15 23:13:34.244  1434  3435 D InputTransport: Input channel constructed: '48141d3', fd=770
+09-15 23:13:34.244  1434  3435 D InputTransport: Input channel constructed: '48141d3', fd=803
+09-15 23:13:34.244   908  1971 I SurfaceFlinger: id=41297 createSurf flag=80004, 48141d3 Splash Screen com.sortiva#41297
+09-15 23:13:34.245  1434  3435 V WindowManager: addWindow: ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702} startingWindow=Window{48141d3 u0 Splash Screen com.sortiva}
+09-15 23:13:34.246  1434  3435 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-15 23:13:34.246  1434  3435 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}
+09-15 23:13:34.246  1434  3435 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-15 23:13:34.246  1434  3435 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}
+09-15 23:13:34.246  1434  3435 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_UNSPECIFIED (-1) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1872 com.android.server.wm.WindowManagerService.addWindow:2091 com.android.server.wm.Session.addToDisplayAsUser:222 android.view.IWindowSession$Stub.onTransact:711 
+09-15 23:13:34.247  1434  3435 D InputTransport: Input channel destroyed: '48141d3', fd=803
+09-15 23:13:34.248  1885  1955 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 78 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(468, 0 - 612, 78), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 H -25.6 V 27.73333333333333 H 25.6 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 78) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,78], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2358][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][84,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[996,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,112], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2310][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,78], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,78], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,0][0,0], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1515][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=Splash Screen com.sortiva from=android.view.ViewRootImpl.setView:1732
+09-15 23:13:34.249   828   828 D Zygote  : Forked child process 10558
+09-15 23:13:34.251  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.251  1885  1955 I ViewRootImpl@2e40193[sortiva]: setView = android.widget.FrameLayout@7c323ef TM=true
+09-15 23:13:34.251  1434  1462 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:29958ms, uid:10336
+09-15 23:13:34.252  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.252  1434  1474 I ActivityManager: Start proc 10558:com.sortiva/u0a336 for next-top-activity {com.sortiva/com.sortiva.MainActivity}
+09-15 23:13:34.253  1434  3435 D CoreBackPreview: Window{48141d3 u0 Splash Screen com.sortiva}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6c5a60e, mPriority=0}
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:34.255  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:34.256  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:34.257  1434  1798 D NetdEventListenerService: DNS Requested by : 135, 1000
+09-15 23:13:34.257  1434  2031 V WindowManager: Relayout Window{48141d3 u0 Splash Screen com.sortiva}: viewVisibility=0 req=1080x2400 d0
+09-15 23:13:34.258  1434  2031 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-15 23:13:34.259   908  1971 I BufferQueueDebug: [Splash Screen com.sortiva$_1885#41298](this:0xb400007b1fac9838,id:-1,api:0,p:-1,c:-1) BufferQueue core=(908:/system/bin/surfaceflinger)
+09-15 23:13:34.259   908  1971 I SurfaceFlinger: id=41298 createSurf flag=40004, Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.260  1434  2031 D WindowManager: makeSurface duration=2 name=Splash Screen com.sortiva$_1885
+09-15 23:13:34.264  1434  2031 V WindowManager: Changing focus from Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} to null displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6810 com.android.server.wm.WindowManagerService.relayoutWindow:2820 com.android.server.wm.Session.relayout:274 
+09-15 23:13:34.264  1434  2031 D MARsPolicyManager: onPackageResumedFG pkgName = com.sec.android.app.launcher, userId = 0
+09-15 23:13:34.264  1434  2031 D StatusBarManagerService: notifyRequestedSystemKey recent=false home=false
+09-15 23:13:34.265  1434  2031 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-15 23:13:34.265  1434  2031 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}
+09-15 23:13:34.265  1434  2031 V WindowManager: Relayout hash=48141d3, pid=1885, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:34.265  1434  2031 V WindowManager:   fl=81030118
+09-15 23:13:34.265  1434  2031 V WindowManager:   pfl=16000010
+09-15 23:13:34.265  1434  2031 V WindowManager:   apr=LIGHT_STATUS_BARS LIGHT_NAVIGATION_BARS
+09-15 23:13:34.265  1434  2031 V WindowManager:   bhv=DEFAULT
+09-15 23:13:34.265  1434  2031 V WindowManager:   fitSides= naviIconColor=0}
+09-15 23:13:34.267  1885  1955 I ViewRootImpl@2e40193[sortiva]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-15 23:13:34.267  1885  1955 D BufferQueueConsumer: [](id:75d00000949,api:0,p:-1,c:1885) connect: controlledByApp=false
+09-15 23:13:34.268  1885  1955 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@2e40193[sortiva] mNativeObject= 0xb4000071bb516800 sc.mNativeObject= 0xb40000710c33a700 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283 
+09-15 23:13:34.268  1885  1955 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@2e40193[sortiva] mNativeObject= 0xb4000071bb516800 sc.mNativeObject= 0xb40000710c33a700 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+09-15 23:13:34.268  1885  1955 I ViewRootImpl@2e40193[sortiva]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=11 res=0x3 s={true 0xb400007110131800} ch=true seqId=0
+09-15 23:13:34.269  1885  1955 I ViewRootImpl@2e40193[sortiva]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007110131800} hwInitialized=true
+09-15 23:13:34.270  1885  1961 D OpenGLRenderer: eglCreateWindowSurface
+09-15 23:13:34.270   908   908 I SurfaceFlinger: [cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity#103] FrameRatePriority: -1
+09-15 23:13:34.271  1885  1955 I ViewRootImpl@2e40193[sortiva]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+09-15 23:13:34.271  1885  1955 I ViewRootImpl@2e40193[sortiva]: Setup new sync id=0
+09-15 23:13:34.271  1885  1955 I ViewRootImpl@2e40193[sortiva]: Setting syncFrameCallback
+09-15 23:13:34.271  1885  1955 I ViewRootImpl@2e40193[sortiva]: registerCallbacksForSync syncBuffer=false
+09-15 23:13:34.271 10558 10558 I com.sortiva: Late-enabling -Xcheck:jni
+09-15 23:13:34.273  1434  2031 D InputDispatcher: Focus left window (0): cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+09-15 23:13:34.275  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 0 0
+09-15 23:13:34.275  2276  2276 I BaseActivity: removeActivityFlags, flags : 8
+09-15 23:13:34.278  1885  1994 I ViewRootImpl@2e40193[sortiva]: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-15 23:13:34.278  1885  1994 I ViewRootImpl@2e40193[sortiva]: Setting up sync and frameCommitCallback
+09-15 23:13:34.284  1885  1961 I BLASTBufferQueue: [ViewRootImpl@2e40193[sortiva]#2377](f:0,a:0) onFrameAvailable the first frame is available
+09-15 23:13:34.286  1885  1961 I BLASTBufferQueue: [ViewRootImpl@2e40193[sortiva]#2377](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=127471872243443(auto) mPendingTransactions.size=0 graphicBufferId=8096013369487 transform=0
+09-15 23:13:34.286  1885  1961 I ViewRootImpl@2e40193[sortiva]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-15 23:13:34.287  1885  1961 D OpenGLRenderer: CFMS:: SetUp Pid : 1885    Tid : 1961
+09-15 23:13:34.287  1885  1961 W Parcel  : Expecting binder but got null!
+09-15 23:13:34.288  1885  1955 I ViewRootImpl@2e40193[sortiva]: onSyncComplete
+09-15 23:13:34.288  1885  1955 I ViewRootImpl@2e40193[sortiva]: setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+09-15 23:13:34.288  1885  1955 I ViewRootImpl@2e40193[sortiva]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb4000071c2c58400
+09-15 23:13:34.289  1434  2031 D WindowManager: finishDrawingWindow: Window{48141d3 u0 Splash Screen com.sortiva} mDrawState=DRAW_PENDING seqId=0
+09-15 23:13:34.289  1434  2031 V WindowManager: Finishing drawing window Window{48141d3 u0 Splash Screen com.sortiva}: mDrawState=DRAW_PENDING
+09-15 23:13:34.289  1434  2031 V WindowManager: Draw state now committed in Window{48141d3 u0 Splash Screen com.sortiva}
+09-15 23:13:34.291  1434  1463 W WindowManager: Execute app transition: mNextAppTransitionRequests=[TRANSIT_OPEN, TRANSIT_OPEN], mNextAppTransitionFlags=, displayId: 0 Callers=com.android.server.wm.ActivityRecord.onStartingWindowDrawn:7496 com.android.server.wm.WindowState.performShowLocked:5504 com.android.server.wm.WindowStateAnimator.commitFinishDrawingLocked:351 com.android.server.wm.DisplayContent.lambda$new$8:1189 com.android.server.wm.DisplayContent.$r8$lambda$OtLCIQFjCt9o-SYztyeDUcWUwGs:0 
+09-15 23:13:34.291  1434  1463 D WindowManager: performShow logReadyForDisplay win=Window{48141d3 u0 Splash Screen com.sortiva} mToken.waitingToShow:true isTransitionSet:true
+09-15 23:13:34.292   908   908 D BufferStateLayer: Splash Screen com.sortiva$_1885#41298 setBuffer frameId=1, bufferId=8096013369487 fenceId=84, w= 1080, h=2400
+09-15 23:13:34.294  1434  1463 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_WALLPAPER_CLOSE enter=false frame=Rect(0, 0 - 1080, 2280) insets=Rect(0, 0 - 0, 0) surfaceInsets=Rect(0, 0 - 0, 0)
+09-15 23:13:34.296  1434  1463 I WindowManager: Reparenting to leash, surface=Surface(name=Task=1)/@0x5462817, leashParent=Surface(name=DefaultTaskDisplayArea)/@0x7e04404
+09-15 23:13:34.296   908  1971 I SurfaceFlinger: id=41299 createSurf flag=24000, Surface(name=Task=1)/@0x5462817 - animation-leash of app_transition#41299
+09-15 23:13:34.297  1434  1463 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=Task=1)/@0x5462817 - animation-leash of app_transition)/@0xb8ad7c5
+09-15 23:13:34.298  1434  1463 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_WALLPAPER_CLOSE enter=true frame=Rect(0, 0 - 1080, 2400) insets=Rect(0, 78 - 0, 42) surfaceInsets=Rect(0, 0 - 0, 0)
+09-15 23:13:34.298  1434  1463 I WindowManager: Reparenting to leash, surface=Surface(name=Task=2702)/@0x462b41, leashParent=Surface(name=DefaultTaskDisplayArea)/@0x7e04404
+09-15 23:13:34.299   908  1971 I SurfaceFlinger: id=41300 createSurf flag=24004, Surface(name=Task=2702)/@0x462b41 - animation-leash of app_transition#41300
+09-15 23:13:34.299 10558 10558 I com.sortiva: Using non-generational CollectorTypeCC GC.
+09-15 23:13:34.300  1434  1463 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=Task=2702)/@0x462b41 - animation-leash of app_transition)/@0x45468e6
+09-15 23:13:34.300  1434  1463 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{48141d3 u0 Splash Screen com.sortiva}
+09-15 23:13:34.301  1434  1463 D WindowManager: fadeWindowToken, show=false, animationType=token_transform, topWindow=Window{d8f2cbb u0 NavigationBar0}, token=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec}, caller=com.android.server.wm.NavBarFadeAnimationController.lambda$fadeWindowToken$0:85 com.android.server.wm.NavBarFadeAnimationController.$r8$lambda$IY4wpcMv4SfehedLdcXxwrAs9wg:0 com.android.server.wm.NavBarFadeAnimationController$$ExternalSyntheticLambda0.run:4 com.android.server.wm.NavBarFadeAnimationController.fadeWindowToken:88 com.android.server.wm.NavBarFadeAnimationController.fadeOutAndInSequentially:113 
+09-15 23:13:34.301  1434  1463 I WindowManager: Reparenting to leash, surface=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e, leashParent=Surface(name=Leaf:24:25)/@0x7260252
+09-15 23:13:34.301   908  1971 I SurfaceFlinger: id=41301 createSurf flag=24000, Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41301
+09-15 23:13:34.302  1434  1463 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform)/@0x7caee27
+09-15 23:13:34.304   908   908 I BufferQueueProducer: [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290](this:0xb400007b1fb15838,id:-1,api:0,p:-1,c:908) queueBuffer: fps=0.10 dur=29296.37 max=29218.88 min=32.97
+09-15 23:13:34.304   908   949 I SurfaceFlinger: id=41302 createSurf flag=80000, 8899a0c ActivityRecordInputSink com.sortiva/.MainActivity#41302
+09-15 23:13:34.305  5232  5239 I adbd    : jdwp connection from 10558
+09-15 23:13:34.307  1885  1940 D Bubbles : onLocusVisibilityChanged: LocusId[17_chars] visible=false
+09-15 23:13:34.313 10558 10558 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-15 23:13:34.315   908   908 I Layer   : Layer [Splash Screen com.sortiva$_1885#41298] hidden!! flag(0)
+09-15 23:13:34.318 10558 10558 D ActivityThread: setConscryptValidator
+09-15 23:13:34.318 10558 10558 D ActivityThread: setConscryptValidator - put
+09-15 23:13:34.324  1434  2858 I ActivityManager: DSS OFF for com.sortiva
+09-15 23:13:34.330  1434  2858 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-15 23:13:34.331  1434  2858 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}
+09-15 23:13:34.331  1434  2858 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_UNSPECIFIED (-1) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1891 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2139 com.android.server.wm.ActivityTaskSupervisor.realStartActivityLocked:913 com.android.server.wm.RootWindowContainer$AttachApplicationHelper.test:4288 
+09-15 23:13:34.333   908   908 I BufferQueueProducer: [FramebufferSurface](this:0xb400007b53e3cb60,id:-1,api:1,p:908,c:908) queueBuffer: fps=1.59 dur=30275.88 max=29548.10 min=10.18
+09-15 23:13:34.334  1434  2858 D TspStateManager: updateCustomValue customSetting=
+09-15 23:13:34.336   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:34.336   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e4800 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#78
+09-15 23:13:34.336   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e29b80 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.sec.android.app.launcher/com.sec[...]ivities.LauncherActivity$_2276#41290
+09-15 23:13:34.336   908   908 D SurfaceFlinger:      CLIENT | 0xb400007b1f8e3480 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   73  162 1007 2238 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.336   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:34.336   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e27c00 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1885#85
+09-15 23:13:34.336   908   908 D SurfaceFlinger: 
+09-15 23:13:34.337  1434  2858 D TspStateManager: updateCustomValue customSetting=
+09-15 23:13:34.337  1434  2858 D SGM:PkgDataHelper: notifyAppCreate(), pkgName: com.sortiva, userId: 0, sendRet: true
+09-15 23:13:34.338  1434  1660 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_CREATE, pkgName: com.sortiva, userId: 0
+09-15 23:13:34.338  1434  2858 D MARsPolicyManager: onPackageResumedFG pkgName = com.sortiva, userId = 0
+09-15 23:13:34.338  1434  2858 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=true r=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702} caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateIfNeeded:2535 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2527 com.android.server.wm.TaskFragment.setResumedActivity:493 com.android.server.wm.TaskFragment.onActivityStateChanged:805 com.android.server.wm.ActivityRecord.setState:6406 com.android.server.wm.Task.minimalResumeActivityLocked:6155 
+09-15 23:13:34.339  1434  2858 D InputDispatcher: Focused application(0): ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}
+09-15 23:13:34.339  1434  2858 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=2339, focused=false
+09-15 23:13:34.339  1434  2858 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=2702, focused=true
+09-15 23:13:34.340  1434  2858 D SGM:FgCheckThread:   sendRunningComponentFocus(), pkgName: com.sortiva, userId: 0
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_TASK_FOCUSED, pkgName: com.sortiva, userId: 0
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread: handleTaskFocused().
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread:   handleTaskFocused(), pkgName: com.sortiva, userID:0
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread: handleResume().
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: KILL_YOURSELF, userId: 0
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread:   handleResume(). pkgName: com.sortiva, userId: 0, isTunableApp: null
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: com.sortiva, type: 4, isTunableApp: false, userId: 0
+09-15 23:13:34.340  1434  1660 D SGM:FgCheckThread:   notifyFocusInOut(). do nothing. mKillNotiCount: 1
+09-15 23:13:34.340  1434  1660 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+09-15 23:13:34.342  2276  2874 I RecentModel: onTaskStackChangedBackground
+09-15 23:13:34.342  1434  1462 I ActivityManager: Changes in 10336 19 to 2, 0 to 15
+09-15 23:13:34.342  1434  1462 I AppOps  : updateUidProcState uid: 10336 procState: 2 capability:15
+09-15 23:13:34.343  1434  1462 I AppOps  : commitUidPendingStateLocked() :: UID - 10336, 700 > 200, 0 > 15
+09-15 23:13:34.343  1434  1462 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-15 23:13:34.343  1434  1720 D AS.MultiSoundManager: mForegroundUid = 10336
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : 3699    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : 2276    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : 4020    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : 4021    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrAddTask    Fail    tid : 2276    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrAddTask    Fail    tid : 3699    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrAddTask    Fail    tid : 4021    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrAddTask    Fail    tid : 4020    return : -1
+09-15 23:13:34.348  1434  1460 E Native_CFMS: nativePerfMgrAddTask    Fail    tid : 10558    return : -1
+09-15 23:13:34.349 10558 10558 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10336; state: ENABLED
+09-15 23:13:34.350  1434  1434 I CocktailBarManagerServiceContainer: handleMessage: entry what = 5
+09-15 23:13:34.350  1434  1434 I CocktailBarManagerServiceImpl: noteResumeComponent : no active host
+09-15 23:13:34.354  1434  1462 D SGM:GameManager: identifyGamePackage. com.sortiva, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.SemGameManager.isGamePackage(SemGameManager.java:104)
+09-15 23:13:34.354  1434  1462 D SGM:PkgDataHelper: getGamePkgData(). com.sortiva
+09-15 23:13:34.354  1434  1462 D SGM:SemGameManager: isGamePackage(), pkgName=com.sortiva, ret=false
+09-15 23:13:34.356  1434  1462 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.sortiva
+09-15 23:13:34.358  2276  2592 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=2694 windowingMode=1 user=0 lastActiveTime=800643200] null, task2=null, task3=null, mStagedSplitBounds=null}
+09-15 23:13:34.358  2276  2592 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=2696 windowingMode=1 user=0 lastActiveTime=800715308] null, task2=null, task3=null, mStagedSplitBounds=null}
+09-15 23:13:34.358  2276  2592 I RecentTasksList: loadTasksInBackground : groupTask = GroupTask{task1=[id=2702 windowingMode=1 user=0 lastActiveTime=801000265] null, task2=null, task3=null, mStagedSplitBounds=null}
+09-15 23:13:34.358  1434  1462 D SGM:GameManager: identifyGamePackage. com.sortiva, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.SortingMachine.isGame(SortingMachine.java:162)
+09-15 23:13:34.358  1434  1462 D SGM:PkgDataHelper: getGamePkgData(). com.sortiva
+09-15 23:13:34.359  1434  1462 D SGM:FgCheckThread: noteResumeComponent(), received pkgName: com.sortiva, userId: 0
+09-15 23:13:34.359  1434  2983 I MediaSessionMonitor: Media session stopped : controllerList empty
+09-15 23:13:34.360  1434  1660 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: com.sortiva, userid: 0
+09-15 23:13:34.360  1434  1660 D SGM:FgCheckThread: handleResume().
+09-15 23:13:34.360  1434  1660 D SGM:FgCheckThread:   handleResume(). same package with Prev KILL_YOURSELF. ignore
+09-15 23:13:34.378  5232 10543 W adbd    : timed out while waiting for FUNCTIONFS_BIND, trying again
+09-15 23:13:34.378  5232 10543 I adbd    : UsbFfs: connection terminated: monitor thread finished
+09-15 23:13:34.393   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409721, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:34.393   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409721, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290)
+09-15 23:13:34.412  5232  5238 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+09-15 23:13:34.426  1434  1463 D WindowManager: fadeWindowToken, show=true, animationType=token_transform, topWindow=Window{d8f2cbb u0 NavigationBar0}, token=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec}, caller=com.android.server.wm.NavBarFadeAnimationController.lambda$fadeWindowToken$0:85 com.android.server.wm.NavBarFadeAnimationController.$r8$lambda$IY4wpcMv4SfehedLdcXxwrAs9wg:0 com.android.server.wm.NavBarFadeAnimationController$$ExternalSyntheticLambda0.run:4 com.android.server.wm.NavBarFadeAnimationController.fadeWindowToken:88 com.android.server.wm.NavBarFadeAnimationController$NavFadeAnimationAdapter.shouldDeferAnimationFinish:146 
+09-15 23:13:34.426  1434  1463 I WindowManager: Cancelling animation restarting=true, leash=Surface(name=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform)/@0x7caee27
+09-15 23:13:34.427  1434  1463 I WindowManager: Reparenting to original parent: Surface(name=Leaf:24:25)/@0x7260252, destroy=false, surface=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e
+09-15 23:13:34.427  1434  1463 I WindowManager: Reparenting to leash, surface=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e, leashParent=Surface(name=Leaf:24:25)/@0x7260252
+09-15 23:13:34.427   908   949 I SurfaceFlinger: id=41303 createSurf flag=24004, Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41303
+09-15 23:13:34.428  1434  1463 D WindowManager: makeSurface duration=1 leash=Surface(name=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform)/@0x6c2bced
+09-15 23:13:34.447   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:34.447   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e4800 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#78
+09-15 23:13:34.447   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e29b80 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.sec.android.app.launcher/com.sec[...]ivities.LauncherActivity$_2276#41290
+09-15 23:13:34.447   908   908 D SurfaceFlinger:      CLIENT | 0xb400007b1f8e3480 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   22   48 1058 2352 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.447   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:34.447   908   908 D SurfaceFlinger: 
+09-15 23:13:34.448   908   908 I Layer   : id=41301 removeFromCurrentState Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41301 (142)
+09-15 23:13:34.448   908   908 I SurfaceFlinger: id=41301 Removed Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41301 (142)
+09-15 23:13:34.449   908   908 I Layer   : id=41301 Destroyed Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41301
+09-15 23:13:34.469   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:34.469   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e4800 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#78
+09-15 23:13:34.469   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e29b80 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.sec.android.app.launcher/com.sec[...]ivities.LauncherActivity$_2276#41290
+09-15 23:13:34.469   908   908 D SurfaceFlinger:      CLIENT | 0xb400007b1f8e3480 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |   16   37 1064 2363 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.469   908   908 D SurfaceFlinger:      CLIENT | 0xb400007b53e27c00 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |   16 2233 1064 2363 | NavigationBar0$_1885#85
+09-15 23:13:34.469   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:34.469   908   908 D SurfaceFlinger: 
+09-15 23:13:34.480  1434  1771 W SemWifiTransportLayerUtils: getApplicationCategory - IOException com.sortiva
+09-15 23:13:34.480  1434  1771 W System.err: java.io.FileNotFoundException: https://play.google.com/store/apps/details?id=com.sortiva&hl=en
+09-15 23:13:34.480  1434  1771 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+09-15 23:13:34.480  1434  1771 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+09-15 23:13:34.480  1434  1771 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+09-15 23:13:34.480  1434  1771 W System.err: 	at com.samsung.android.server.wifi.tcp.SemWifiTransportLayerUtils.getApplicationCategory(SemWifiTransportLayerUtils.java:104)
+09-15 23:13:34.480  1434  1771 W System.err: 	at com.samsung.android.server.wifi.tcp.SemWifiTransportLayerMonitor$TcpMonitorHandler.handleMessage(SemWifiTransportLayerMonitor.java:244)
+09-15 23:13:34.480  1434  1771 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-15 23:13:34.480  1434  1771 W System.err: 	at android.os.Looper.loopOnce(Looper.java:226)
+09-15 23:13:34.480  1434  1771 W System.err: 	at android.os.Looper.loop(Looper.java:313)
+09-15 23:13:34.480  1434  1771 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+09-15 23:13:34.483  1434  1771 D SemWifiPackageInfo: isSkipCategory - skip:FAILED
+09-15 23:13:34.483  1434  1771 D SemWifiTransportLayerMonitor.TcpMonitorHandler: MSG_SAVE_PACKAGE_INFO
+09-15 23:13:34.483  1434  1771 D SemWifiTransportLayerFileManager: saveWifiPackageInfoToFile
+09-15 23:13:34.483  1434  1771 D SemWifiTransportLayerFileManager: writeWifiPackageInfoList
+09-15 23:13:34.485  1434  2144 D MdnieScenarioControlService:  packageName : com.sortiva    className : com.sortiva.MainActivity
+09-15 23:13:34.485  1434  2144 V MdnieScenarioControlService: setUIMode from UI function(3)
+09-15 23:13:34.502  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.503  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.503  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.504  1885  1991 D MobileStatusTracker(1/3): onSignalStrengthsChanged level=4, vendorLevel=3
+09-15 23:13:34.507  1885  1991 D MobileSignalController(1/3): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+09-15 23:13:34.508  1885  1991 D NetworkController: SignalStrength from intent slotId=1
+09-15 23:13:34.586  1434  2144 V MdnieScenarioControlService: mAclOffEnabled : false mAclPreviewState : false mAclCompensationState : false
+09-15 23:13:34.618   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409722, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:34.618   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409722, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290)
+09-15 23:13:34.618   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409722, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:34.648  1434  1463 I WindowManager: Reparenting to original parent: Surface(name=DefaultTaskDisplayArea)/@0x7e04404, destroy=true, surface=Surface(name=Task=1)/@0x5462817
+09-15 23:13:34.648   908   908 I BufferQueueProducer: [NavigationBar0$_1885#85](this:0xb400007b2d954838,id:-1,api:0,p:-1,c:908) queueBuffer: fps=2.30 dur=29981.91 max=29164.42 min=7.93
+09-15 23:13:34.649  1434  1463 V WindowManager: Setting visibility of Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.ActivityRecord.setClientVisible:7691 com.android.server.wm.ActivityRecord.onAnimationFinished:8590 com.android.server.wm.WindowContainer.doAnimationFinished:3483 
+09-15 23:13:34.649  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: handleAppVisibility mAppVisible = true visible = false
+09-15 23:13:34.649  1434  1463 I WindowManager: Reparenting to original parent: Surface(name=DefaultTaskDisplayArea)/@0x7e04404, destroy=true, surface=Surface(name=Task=2702)/@0x462b41
+09-15 23:13:34.651  1434  1463 V WindowManager: Setting visibility of Window{7a4e2c6 u0 com.android.systemui.ImageWallpaper}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.WallpaperWindowToken.setVisible:160 com.android.server.wm.WallpaperWindowToken.updateWallpaperWindows:154 com.android.server.wm.WallpaperController.updateWallpaperTokens:676 
+09-15 23:13:34.651  1885 14916 D WallpaperService: dispatchAppVisibility onVisibilityChanged(): false
+09-15 23:13:34.651  1885  1885 D WallpaperService: reportVisibility onVisibilityChanged visible: false
+09-15 23:13:34.651  1885  2080 I ImageWallpaper[GLEngine]:  onVisibilityChanged false , 0
+09-15 23:13:34.659   908   908 I Layer   : id=41299 removeFromCurrentState Surface(name=Task=1)/@0x5462817 - animation-leash of app_transition#41299 (141)
+09-15 23:13:34.659   908   908 I Layer   : id=41300 removeFromCurrentState Surface(name=Task=2702)/@0x462b41 - animation-leash of app_transition#41300 (141)
+09-15 23:13:34.659   908   908 I Layer   : Layer [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290] hidden!! flag(1)
+09-15 23:13:34.659   908   908 I SurfaceFlinger: id=41300 Removed Surface(name=Task=2702)/@0x462b41 - animation-leash of app_transition#41300 (141)
+09-15 23:13:34.659   908   908 I SurfaceFlinger: id=41299 Removed Surface(name=Task=1)/@0x5462817 - animation-leash of app_transition#41299 (141)
+09-15 23:13:34.660   908   908 I Layer   : id=41299 Destroyed Surface(name=Task=1)/@0x5462817 - animation-leash of app_transition#41299
+09-15 23:13:34.660   908   908 I Layer   : id=41300 Destroyed Surface(name=Task=2702)/@0x462b41 - animation-leash of app_transition#41300
+09-15 23:13:34.664  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+09-15 23:13:34.665  1434  2858 V WindowManager: Relayout Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=8 req=1080x2400 d0
+09-15 23:13:34.665   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:34.665   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e3480 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.665   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256700 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1885#85
+09-15 23:13:34.665   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:34.665   908   908 D SurfaceFlinger: 
+09-15 23:13:34.667  1434  2858 V WindowManager: Relayout hash=cf6ba73, pid=2276, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+09-15 23:13:34.667  1434  2858 V WindowManager:   fl=81910100
+09-15 23:13:34.667  1434  2858 V WindowManager:   pfl=1e020040
+09-15 23:13:34.667  1434  2858 V WindowManager:   vsysui=1700
+09-15 23:13:34.667  1434  2858 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-15 23:13:34.667  1434  2858 V WindowManager:   fitSides= naviIconColor=0}
+09-15 23:13:34.669  2276  2276 I BLASTBufferQueue: [ViewRootImpl@aec4b3e[LauncherActivity]#716](f:0,a:1) destructor()
+09-15 23:13:34.670  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=5 res=0x2 s={false 0x0} ch=true seqId=0
+09-15 23:13:34.671  1434  1463 I WindowManager: Reparenting to original parent: Surface(name=Leaf:24:25)/@0x7260252, destroy=true, surface=Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e
+09-15 23:13:34.681   908   908 I Layer   : id=41303 removeFromCurrentState Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41303 (139)
+09-15 23:13:34.681   908   908 I SurfaceFlinger: id=41303 Removed Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41303 (139)
+09-15 23:13:34.682   908   908 I Layer   : id=41303 Destroyed Surface(name=WindowToken{126f54a type=2019 android.os.BinderProxy@63396ec})/@0x61c1f7e - animation-leash of token_transform#41303
+09-15 23:13:34.686   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:34.686   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e3480 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:34.686   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:34.686   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e5580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1885#85
+09-15 23:13:34.686   908   908 D SurfaceFlinger: 
+09-15 23:13:34.708   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409723, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:34.736 13483 13483 I cesb    : onPause
+09-15 23:13:34.760 10558 10558 D nativeloader: Configuring clns-4 for other apk /data/app/~~FxpEustq5SJ1_tIZzngKrw==/com.sortiva-kvQn1w3Ep_5x8wBiqGfBcA==/base.apk. target_sdk_version=37, uses_libraries=, library_path=/data/app/~~FxpEustq5SJ1_tIZzngKrw==/com.sortiva-kvQn1w3Ep_5x8wBiqGfBcA==/lib/arm64:/data/app/~~FxpEustq5SJ1_tIZzngKrw==/com.sortiva-kvQn1w3Ep_5x8wBiqGfBcA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.sortiva
+09-15 23:13:34.775 10558 10558 D nativeloader: Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+09-15 23:13:34.782 10558 10558 V GraphicsEnvironment: ANGLE Developer option for 'com.sortiva' set to: 'default'
+09-15 23:13:34.783 10558 10558 V GraphicsEnvironment: ANGLE GameManagerService for com.sortiva: false
+09-15 23:13:34.783 10558 10558 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-15 23:13:34.789 10558 10558 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-15 23:13:34.808   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409724, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:34.865 10558 10558 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-15 23:13:34.868 10558 10558 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: FATAL EXCEPTION: main
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: Process: com.sortiva, PID: 10558
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.google.android.gms.ads.MobileAdsInitProvider: java.lang.IllegalStateException: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: ******************************************************************************
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * Missing application ID. AdMob publishers should follow the instructions    *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * here:                                                                      *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * https://goo.gle/admob-android-update-manifest.                             *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * to add a valid App ID inside the AndroidManifest.                          *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * Google Ad Manager publishers should follow instructions here:              *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * https://goo.gle/ad-manager-android-update-manifest.                        *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: ******************************************************************************
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8350)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:7850)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7599)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(ActivityThread.java:0)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:226)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:313)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:8779)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:604)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: Caused by: java.lang.IllegalStateException: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: ******************************************************************************
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * Missing application ID. AdMob publishers should follow the instructions    *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * here:                                                                      *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * https://goo.gle/admob-android-update-manifest.                             *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * to add a valid App ID inside the AndroidManifest.                          *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * Google Ad Manager publishers should follow instructions here:              *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: * https://goo.gle/ad-manager-android-update-manifest.                        *
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: ******************************************************************************
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at com.google.android.gms.ads.internal.client.zzev.attachInfo(com.google.android.gms:play-services-ads-lite@@24.0.0:26)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at com.google.android.gms.ads.MobileAdsInitProvider.attachInfo(com.google.android.gms:play-services-ads-lite@@24.0.0:1)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:8345)
+09-15 23:13:34.870 10558 10558 E AndroidRuntime: 	... 11 more
+09-15 23:13:34.876  1434 10580 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+09-15 23:13:34.876  1434  2858 D Debug   : low && ship && 3rdparty app crash, do not dump
+09-15 23:13:34.876  1434  2858 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1252 com.android.server.am.AppErrors.crashApplicationInner:722 com.android.server.am.AppErrors.crashApplication:598 com.android.server.am.ActivityManagerService.handleApplicationCrashInner:10509 com.android.server.am.ActivityManagerService.handleApplicationCrash:10378 
+09-15 23:13:34.877  1434  2858 W ActivityManager: crash : com.sortiva,10336
+09-15 23:13:34.877  1434  2858 W ActivityTaskManager:   Force finishing activity com.sortiva/.MainActivity
+09-15 23:13:34.877  1434  2858 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.requestTransitionAndLegacyPrepare:6509 com.android.server.wm.Task.finishTopCrashedActivityLocked:6797 com.android.server.wm.RootWindowContainer.lambda$finishTopCrashedActivities$19:2688 com.android.server.wm.RootWindowContainer.$r8$lambda$4nB35TzseTo6qyVD9NxDieoJN1Y:0 
+09-15 23:13:34.878  1434  2858 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=false r=ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702 f}} caller=com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:2510 com.android.server.wm.TaskDisplayArea.positionChildTaskAt:602 com.android.server.wm.TaskDisplayArea.positionChildAt:537 com.android.server.wm.WindowContainer.positionChildAt:970 com.android.server.wm.Task.positionChildAt:3354 com.android.server.wm.Task.moveToFrontInner:6053 
+09-15 23:13:34.879  1434  2858 D InputDispatcher: Focused application(0): ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339}
+09-15 23:13:34.879  1434  2858 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=2702, focused=false
+09-15 23:13:34.879  1434  2858 D SGM:FgCheckThread: TaskStackListener.onTaskFocusChanged(), taskId=2339, focused=true
+09-15 23:13:34.879  1434  2858 D SGM:FgCheckThread:   sendRunningComponentFocus(), pkgName: com.sec.android.app.launcher, userId: 0
+09-15 23:13:34.879  1434  1660 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_TASK_FOCUSED, pkgName: com.sec.android.app.launcher, userId: 0
+09-15 23:13:34.879  1434  1660 D SGM:FgCheckThread: handleTaskFocused().
+09-15 23:13:34.879  1434  1660 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: KILL_YOURSELF, userId: 0
+09-15 23:13:34.879  1434  1720 D AS.MultiSoundManager: mForegroundUid = 10125
+09-15 23:13:34.879  1434  1660 D SGM:FgCheckThread:   handleTaskFocused(), pkgName: com.sec.android.app.launcher, userID:0 mResumedPkgMap does not containsKey.
+09-15 23:13:34.880  1434  2858 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.ActivityRecord.finishIfPossible:4151 com.android.server.wm.ActivityRecord.finishIfPossible:3966 com.android.server.wm.Task.finishTopCrashedActivityLocked:6798 
+09-15 23:13:34.880  1434  2858 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-15 23:13:34.905   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409725, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:34.905   908   908 I Layer   : id=41304 Destroyed Screenshot Parent#41304
+09-15 23:13:34.917  1434  1473 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+09-15 23:13:34.918  2276  2276 I TopTaskTracker: onTaskMovedToFront : taskId = 2339
+09-15 23:13:34.921   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409726, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:34.922 10558 10558 I Process : Sending signal. PID: 10558 SIG: 9
+09-15 23:13:34.922  3390  3390 W DMASA[D]: [a]This app does not allow 3rd-party FC detection: com.sortiva
+09-15 23:13:34.929  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.931  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:34.941  3404  3404 I SDHMS:BarTender:Gatherer:AppError: update AppError : uid=10336, pkg=com.sortiva, errorType=crash
+09-15 23:13:34.953  3404  3404 I SDHMS:BarTender:Analyzer:AppError: analyze app error : uid=10336, pkg=com.sortiva, appErrorCount=4
+09-15 23:13:34.965  5232  5232 I adbd    : Remote process closed the socket (on MSG_PEEK)
+09-15 23:13:34.965  1434  2064 I ActivityManager: Process com.sortiva (pid 10558) has died: fg  TOP (570,3316)
+09-15 23:13:34.965  1434  1478 I libprocessgroup: Successfully killed process cgroup uid 10336 pid 10558 in 0ms
+09-15 23:13:34.965  1434  1460 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : 10558    return : -1
+09-15 23:13:34.966   828   828 I Zygote  : Process 10558 exited due to signal 9 (Killed)
+09-15 23:13:34.966  1434  2064 V WindowManager: Schedule remove starting ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702 f}} startingWindow=null startingView=null Callers=com.android.server.wm.ActivityRecord.removeStartingWindow:3233 com.android.server.wm.ActivityRecord.onRemovedFromDisplay:4966 com.android.server.wm.DisplayContent.removeAppToken:1683 com.android.server.wm.ActivityRecord.removeFromHistory:4605 com.android.server.wm.ActivityRecord.handleAppDied:4861 
+09-15 23:13:34.966  1434  2064 V MARsPolicyManager: Current Home Package com.sec.android.app.launcher Resumed
+09-15 23:13:34.966  1434  2064 D MARsPolicyManager: onPackageResumedFG pkgName = com.sec.android.app.launcher, userId = 0
+09-15 23:13:34.967  1434  2064 I SemDvfsHyPerManager: acquire hyper - AMS_APP_HOME/1434@28, type = -999
+09-15 23:13:34.967   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 1069481  [1434 / 28]    HINT : AMS_APP_HOME    list : 
+09-15 23:13:34.968   851   880 I mtkpower_client: perf_lock_rel, hdl:15458, tid:880
+09-15 23:13:34.968  3404  3404 I SemDvfsHyPerManager: acquire hyper - APP_START_HOME/3404@13, type = -999
+09-15 23:13:34.968 23521 10587 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-15 23:13:34.969   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.969   856   896 I libPowerHal: [perfLockRel] hdl:15458, idx:2
+09-15 23:13:34.970  1434  2064 D ActivityManagerPerformance: AMP_acquire() HOME
+09-15 23:13:34.970  1434  2064 W WindowManager: Prepare app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE, TRANSIT_OPEN], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.DisplayContent.prepareAppTransition:6493 com.android.server.wm.DisplayContent.prepareAppTransition:6484 com.android.server.wm.TaskFragment.resumeTopActivity:1583 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.resumeTopActivityInnerLocked:6451 
+09-15 23:13:34.970   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:34.971   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:34.972  1434  2064 V WindowManager: Setting visibility of Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: true, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.ActivityRecord.setClientVisible:7691 com.android.server.wm.ActivityRecord.setVisibility:6091 com.android.server.wm.ActivityRecord.setVisibility:5984 
+09-15 23:13:34.972   851   880 I mtkpower_client: ret_hdl:15461
+09-15 23:13:34.972   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15461 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15461
+09-15 23:13:34.973   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:34.973  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: handleAppVisibility mAppVisible = false visible = true
+09-15 23:13:34.973   851   880 I mtkpower_client: perf_lock_rel, hdl:15459, tid:880
+09-15 23:13:34.973  1434  2064 D WindowManagerServiceExt: notifyOccludeChangeNotice: reset caller=com.android.server.wm.WindowManagerServiceExt.updateOccludeTargetIfNeeded:1402 com.android.server.wm.DisplayContent.ensureActivitiesVisible:7532 com.android.server.wm.RootWindowContainer.ensureActivitiesVisible:2248 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2126 com.android.server.wm.TaskFragment.resumeTopActivity:1652 
+09-15 23:13:34.973  1434  2064 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_NOSENSOR (5), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-15 23:13:34.973  1434  2064 D WindowManager: rotationForOrientation, orientationSource=ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339}
+09-15 23:13:34.974  1434  2064 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_NOSENSOR (5) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:414 com.android.server.wm.DisplayContent.updateOrientation:1990 com.android.server.wm.DisplayContent.updateOrientation:1891 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:2139 com.android.server.wm.TaskFragment.resumeTopActivity:1652 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+09-15 23:13:34.974  1434  1434 I CocktailBarManagerServiceContainer: handleMessage: entry what = 5
+09-15 23:13:34.974  1434  1434 I CocktailBarManagerServiceImpl: noteResumeComponent : no active host
+09-15 23:13:34.975 23521 10587 I DropBoxUtil: (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+09-15 23:13:34.975  1434  2064 D TspStateManager: updateCustomValue customSetting=
+09-15 23:13:34.976  1434  2064 D TspStateManager: updateCustomValue customSetting=
+09-15 23:13:34.977  1434  2064 E WindowManager: win=Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} destroySurfaces: appStopped=false cleanupOnResume=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:6539 com.android.server.wm.ActivityRecord.notifyAppResumed:6559 com.android.server.wm.TaskFragment.resumeTopActivity:1698 com.android.server.wm.TaskFragment.resumeTopActivity:1307 com.android.server.wm.Task.resumeTopActivityInnerLocked:6451 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:6352 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:6374 
+09-15 23:13:34.978  1434  2064 I WindowManager: Destroying surface Surface(name=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276)/@0x8c9e6fc called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.destroySurfaceUnchecked:4309 com.android.server.wm.WindowState.destroySurface:4283 com.android.server.wm.ActivityRecord.destroySurfaces:6539 com.android.server.wm.ActivityRecord.notifyAppResumed:6559 com.android.server.wm.TaskFragment.resumeTopActivity:1698 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+09-15 23:13:34.979  1434  2064 W WindowManager: Execute app transition: mNextAppTransitionRequests=[TRANSIT_CLOSE, TRANSIT_CLOSE, TRANSIT_OPEN], mNextAppTransitionFlags=TRANSIT_FLAG_KEYGUARD_GOING_AWAY_TO_LAUNCHER_WITH_IN_WINDOW_ANIMATIONS | TRANSIT_FLAG_APP_CRASHED, displayId: 0 Callers=com.android.server.wm.RootWindowContainer.executeAppTransitionForAllDisplay:2580 com.android.server.wm.ActivityTaskSupervisor.reportResumedActivityLocked:2287 com.android.server.wm.ActivityRecord.completeResumeLocked:6987 com.android.server.wm.TaskFragment.resumeTopActivity:1743 com.android.server.wm.TaskFragment.resumeTopActivity:1307 
+09-15 23:13:34.979   851   880 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:880
+09-15 23:13:34.980   856   896 I libPowerHal: [perfLockRel] hdl:15459, idx:0
+09-15 23:13:34.980   908   908 I Layer   : id=41290 removeFromCurrentState com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290 (138)
+09-15 23:13:34.981   908   908 I SurfaceFlinger: id=41290 Removed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290 (138)
+09-15 23:13:34.981   908   908 I BufferQueueDebug: [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290](this:0xb400007b1fb15838,id:-1,api:0,p:-1,c:908) onDestructor()
+09-15 23:13:34.981   908   908 I Layer   : id=41290 Destroyed com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41290
+09-15 23:13:34.986  2276  2276 W NavigableAppWidgetHostView: setResizeScaleResult() 1002/ 357 scaleToResize = 1.0(widget id = 6) 79defa7 0,363-1002,720
+09-15 23:13:34.987  2276  2276 W NavigableAppWidgetHostView: setResizeScaleResult() 750/ 357 scaleToResize = 1.0(widget id = 7) 7e5eb9b 252,0-1002,357
+09-15 23:13:34.988  1434  2064 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-15 23:13:34.988  1434  1463 V WindowManager: Removing startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@9a00636
+09-15 23:13:34.993  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+09-15 23:13:34.994  1434  2031 V WindowManager: Relayout Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=1080x2400 d0
+09-15 23:13:34.994   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:34.994  1434  2031 D RestrictionPolicy: isScreenCaptureEnabled : ret=true userId=0
+09-15 23:13:34.995  1434  1462 D SGM:GameManager: identifyGamePackage. com.sec.android.app.launcher, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.samsung.android.game.SemGameManager.isGamePackage(SemGameManager.java:104)
+09-15 23:13:34.995  1434  1462 D SGM:PkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-15 23:13:34.995  1434  1462 D SGM:SemGameManager: isGamePackage(), pkgName=com.sec.android.app.launcher, ret=false
+09-15 23:13:34.995   908   949 I BufferQueueDebug: [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305](this:0xb400007b2d86e838,id:-1,api:0,p:-1,c:-1) BufferQueue core=(908:/system/bin/surfaceflinger)
+09-15 23:13:34.995   908   949 I SurfaceFlinger: id=41305 createSurf flag=40004, com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305
+09-15 23:13:34.995  1434  1798 D NetdEventListenerService: DNS Requested by : 135, 10323
+09-15 23:13:34.995  1434  2031 D WindowManager: makeSurface duration=1 name=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276
+09-15 23:13:34.995   851   880 I mtkpower_client: ret_hdl:15462
+09-15 23:13:34.996  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:34.996  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:34.996  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:34.996  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:34.996  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:34.996   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5839666  [3404 / 13]    HINT : APP_START    list : [KERNEL_APP_START_NOTIFY / 0] [TIMEOUT / 1500] 
+09-15 23:13:34.996  1434  3435 I ActivityManager: updateOomAdj start time is before than pendingPid added, don't delete it
+09-15 23:13:34.997  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:34.997  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:34.997  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:34.997  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:34.997  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:34.998   856   896 I libPowerHal: [perfLockAcq] idx:3 hdl:15462 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15462
+09-15 23:13:34.998  2276  2285 I ViewRootImpl@aec4b3e[LauncherActivity]: Resizing android.view.ViewRootImpl@c5ccba2: frame = [0,0][1080,2400] reportDraw = true forceLayout = false syncSeqId = 0
+09-15 23:13:34.999   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:34.999  1434  2031 V WindowManager: Changing focus from null to Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} displayId=0 Callers=com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 com.android.server.wm.WindowManagerService.updateFocusedWindowLocked:6810 com.android.server.wm.WindowManagerService.relayoutWindow:2820 com.android.server.wm.Session.relayout:274 
+09-15 23:13:35.000  1434  2031 D WindowManager: updateSystemBarAttributes: displayId=0, win=Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}, navColorWin=Window{48141d3 u0 Splash Screen com.sortiva}, focusedCanBeNavColorWin=false, behavior=2, appearance=16, statusBarAppearanceRegions=[AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][1080,2400]}], requestedVisibilities=ITYPE_STATUS_BAR: visible, ITYPE_NAVIGATION_BAR: visible, ITYPE_IME: invisible, ITYPE_CLIMATE_BAR: visible, ITYPE_EXTRA_NAVIGATION_BAR: visible, ITYPE_LOCAL_NAVIGATION_BAR_1: visible, ITYPE_LOCAL_NAVIGATION_BAR_2: visible, from=com.android.server.wm.DisplayPolicy.focusChangedLw:3247 com.android.server.wm.DisplayContent.updateFocusedWindowLocked:4632 com.android.server.wm.RootWindowContainer.updateFocusedWindowLocked:595 
+09-15 23:13:35.000  1434  2031 D StatusBarManagerService: notifyRequestedSystemKey recent=false home=false
+09-15 23:13:35.000  1434  3435 V WindowManager: Relayout Window{48141d3 u0 Splash Screen com.sortiva}: viewVisibility=0 req=1080x2400 d0
+09-15 23:13:35.001  3404  3685 I R0      : limitGPUFreq:: freq = -1
+09-15 23:13:35.001  3404  3685 I R0      : limitCPUFreq:: freq = -1
+09-15 23:13:35.001  1434  2031 V WindowManager: Relayout hash=cf6ba73, pid=2276, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+09-15 23:13:35.001  1434  2031 V WindowManager:   fl=81910100
+09-15 23:13:35.001  1434  2031 V WindowManager:   pfl=1e020040
+09-15 23:13:35.001  1434  2031 V WindowManager:   vsysui=1700
+09-15 23:13:35.001  1434  2031 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-15 23:13:35.001  1434  2031 V WindowManager:   fitSides= naviIconColor=0}
+09-15 23:13:35.003  1434  3435 D WindowManager: updateSystemBarAttributes: displayId=0, win=Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}, navColorWin=Window{48141d3 u0 Splash Screen com.sortiva}, focusedCanBeNavColorWin=false, behavior=2, appearance=0, statusBarAppearanceRegions=[AppearanceRegion{ bounds=[0,0][1080,2400]}], requestedVisibilities=ITYPE_STATUS_BAR: visible, ITYPE_NAVIGATION_BAR: visible, ITYPE_IME: invisible, ITYPE_CLIMATE_BAR: visible, ITYPE_EXTRA_NAVIGATION_BAR: visible, ITYPE_LOCAL_NAVIGATION_BAR_1: visible, ITYPE_LOCAL_NAVIGATION_BAR_2: visible, from=com.android.server.wm.DisplayPolicy.finishPostLayoutPolicyLw:2527 com.android.server.wm.DisplayContent.applySurfaceChangesTransaction:5713 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction:1234 
+09-15 23:13:35.006  1434  3435 V WindowManager: Relayout hash=48141d3, pid=1885, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309
+09-15 23:13:35.006  1434  3435 V WindowManager:   fl=81030118
+09-15 23:13:35.006  1434  3435 V WindowManager:   pfl=16000010
+09-15 23:13:35.006  1434  3435 V WindowManager:   bhv=DEFAULT
+09-15 23:13:35.006  1434  3435 V WindowManager:   fitSides= naviIconColor=0}
+09-15 23:13:35.008  1885  1885 D SamsungLightBarControlHelper: onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:MODE_TRANSPARENT, barState:SHADE, isKeyguardShowing:false, navbarColorManagedByIme:false, stackAppearancesChanged:true, (AppearanceRegion{LIGHT_STATUS_BARS bounds=[0,0][1080,2400]}, ), packageName:com.sec.android.app.launcher
+09-15 23:13:35.009  1885  1885 D NavigationBar: onSystemBarAttributesChanged() -  displayId:0, appearance:16, packageName: com.sec.android.app.launcher (APPEARANCE_LIGHT_NAVIGATION_BARS ), navbarColorManagedByIme:false
+09-15 23:13:35.009  1885  1885 D SamsungLightBarControlHelper: onStatusBarAppearanceChanged() -  sbModeChanged:false, statusBarMode:MODE_TRANSPARENT, barState:SHADE, isKeyguardShowing:false, navbarColorManagedByIme:false, stackAppearancesChanged:true, (AppearanceRegion{ bounds=[0,0][1080,2400]}, ), packageName:com.sec.android.app.launcher
+09-15 23:13:35.009  1885  1885 D NavigationBar: onSystemBarAttributesChanged() -  displayId:0, appearance:0, packageName: com.sec.android.app.launcher, navbarColorManagedByIme:false
+09-15 23:13:35.011  1885  1955 I ViewRootImpl@2e40193[sortiva]: updateBlastSurfaceIfNeeded mBlastBufferQueue=0xb4000071bb516800 isSameSurfaceControl=true
+09-15 23:13:35.012  1885  1955 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@2e40193[sortiva] mNativeObject= 0xb4000071bb516800 sc.mNativeObject= 0xb4000071108f55e0 format= -3 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+09-15 23:13:35.012  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-15 23:13:35.012  1885  1955 I ViewRootImpl@2e40193[sortiva]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=14 res=0x0 s={true 0xb400007110131800} ch=false seqId=0
+09-15 23:13:35.012  1434  1798 D NetdEventListenerService: DNS Requested by : 135, 10323
+09-15 23:13:35.013  2276  2276 I BLASTBufferQueue: new BLASTBufferQueue, mName= ViewRootImpl@aec4b3e[LauncherActivity] mNativeObject= 0xb40000712cdf1200 sc.mNativeObject= 0xb40000712e487e80 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283 
+09-15 23:13:35.013  2276  2276 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@aec4b3e[LauncherActivity] mNativeObject= 0xb40000712cdf1200 sc.mNativeObject= 0xb40000712e487e80 format= -2 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+09-15 23:13:35.013  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=19 res=0x3 s={true 0xb40000712e20d000} ch=true seqId=0
+09-15 23:13:35.014   908   908 I SurfaceFlinger: [cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity#103] FrameRatePriority: 1
+09-15 23:13:35.014  1434  1462 I GameSDK@LifeCycle: noteResumeComponent(): package name  : com.sec.android.app.launcher
+09-15 23:13:35.014  1434  1462 D SGM:FgCheckThread: noteResumeComponent(), received pkgName: com.sec.android.app.launcher, userId: 0
+09-15 23:13:35.014  1434  1660 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_APP_RESUME, pkgName: com.sec.android.app.launcher, userid: 0
+09-15 23:13:35.014  1434  1660 D SGM:FgCheckThread: handleResume().
+09-15 23:13:35.015  1434  1660 D SGM:FgCheckThread: sendFocusOutConditionally() - mPrevNotiPkg: KILL_YOURSELF, userId: 0
+09-15 23:13:35.015  1434  1660 D SGM:FgCheckThread:   handleResume(). pkgName: com.sec.android.app.launcher, userId: 0, isTunableApp: null
+09-15 23:13:35.015  1434  1660 D SGM:FgCheckThread: notifyFocusInOut(). of pkg: com.sec.android.app.launcher, type: 4, isTunableApp: false, userId: 0
+09-15 23:13:35.015  1434  1660 D SGM:FgCheckThread:   notifyFocusInOut(). do nothing. mKillNotiCount: 1
+09-15 23:13:35.015  1434  1660 D SGM:SystemHelper: callReleaseBlock needReleaseBlock:false
+09-15 23:13:35.016  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: mThreadedRenderer.initialize() mSurface={isValid=true 0xb40000712e20d000} hwInitialized=true
+09-15 23:13:35.017  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+09-15 23:13:35.017  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Setup new sync id=782
+09-15 23:13:35.017  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Setting syncFrameCallback
+09-15 23:13:35.017  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: registerCallbacksForSync syncBuffer=false
+09-15 23:13:35.019  1434  2983 I MediaSessionMonitor: Media session stopped : controllerList empty
+09-15 23:13:35.020   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409727, screenshot (Splash Screen com.sortiva$_1885#41298)
+09-15 23:13:35.025   908   908 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+09-15 23:13:35.026   908  1105 D SurfaceFlinger: [input] setFocusedWindow: cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+09-15 23:13:35.034  1434  4374 D InputDispatcher: Focus request (0): cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity but waiting because NOT_VISIBLE
+09-15 23:13:35.071  2276  4021 I ViewRootImpl@aec4b3e[LauncherActivity]: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-15 23:13:35.072  2276  4021 I ViewRootImpl@aec4b3e[LauncherActivity]: Setting up sync and frameCommitCallback
+09-15 23:13:35.072  2276  2281 I id.app.launcher: NativeAlloc concurrent copying GC freed 2117KB AllocSpace bytes, 6(1672KB) LOS objects, 49% free, 9372KB/18MB, paused 216us,119us total 151.577ms
+09-15 23:13:35.075  1434  4374 I AppOps  : updateUidProcState uid: 10045 procState: 0 capability:15
+09-15 23:13:35.076  1050  6447 I CameraService: onUidStateChanged: uid=10045, procState is changed. (1 -> 0)
+09-15 23:13:35.077  2276  3699 I BLASTBufferQueue: [ViewRootImpl@aec4b3e[LauncherActivity]#717](f:0,a:0) onFrameAvailable the first frame is available
+09-15 23:13:35.078  2276  3699 I BLASTBufferQueue: [ViewRootImpl@aec4b3e[LauncherActivity]#717](f:0,a:1) acquireNextBufferLocked size=1080x2400 mFrameNumber=1 applyTransaction=true mTimestamp=127472664967750(auto) mPendingTransactions.size=0 graphicBufferId=9775345570280 transform=0
+09-15 23:13:35.078  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:35.078  2276  3699 I ViewRootImpl@aec4b3e[LauncherActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-15 23:13:35.079  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: onSyncComplete
+09-15 23:13:35.080  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: setupSync seqId=0 mSyncId=782 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+09-15 23:13:35.080  1885  1961 D OpenGLRenderer: setSurface called with nullptr
+09-15 23:13:35.080  1885  1961 D OpenGLRenderer: setSurface() destroyed EGLSurface
+09-15 23:13:35.080  1885  1961 D OpenGLRenderer: destroyEglSurface
+09-15 23:13:35.080  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb4000071c3282a00
+09-15 23:13:35.080   908   908 D BufferStateLayer: com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305 setBuffer frameId=1, bufferId=9775345570280 fenceId=467, w= 1080, h=2400
+09-15 23:13:35.082  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: stopped(false) old = false
+09-15 23:13:35.082  2276  2276 I Launcher: !@Boot_DEBUG: Launcher.onResume()
+09-15 23:13:35.082  2276  2276 I Launcher: !@Boot_EBS_D: Launcher.onResume()
+09-15 23:13:35.082  2276  2276 I BaseActivity: addActivityFlags, flags : 18
+09-15 23:13:35.082  2276  2276 I BaseActivity: removeActivityFlags, flags : 32
+09-15 23:13:35.083  1434  2064 D WindowManager: finishDrawingWindow: Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} mDrawState=DRAW_PENDING seqId=0
+09-15 23:13:35.083  2276  2276 I AppsSearchBar: restoreCurrentCellLayoutAlpha: null
+09-15 23:13:35.083  2276  2276 W SearchLauncherServiceMover: isMoving : false
+09-15 23:13:35.083  1434  1463 V WindowManager: Setting visibility of Window{7a4e2c6 u0 com.android.systemui.ImageWallpaper}: true, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:1246 com.android.server.wm.WindowToken.setClientVisible:431 com.android.server.wm.WallpaperWindowToken.setVisible:160 com.android.server.wm.WallpaperWindowToken.commitVisibility:202 com.android.server.wm.WallpaperWindowToken.setVisibility:187 
+09-15 23:13:35.084  2276  2592 I IMM_LC  : hsifw() - flag : 0
+09-15 23:13:35.084  2276  2592 I IMM_LC  : hsifw() - mService.hideSoftInput
+09-15 23:13:35.084  1885  1957 D WallpaperService: dispatchAppVisibility onVisibilityChanged(): true
+09-15 23:13:35.084  1885  1885 D WallpaperService: updateSurface forceRelayout=true forceReport=false redrawNeeded=false myWidth=2400 myHeight=2400 fixedSize=true x = 0 y = 0 mWidth=2400 mHeight=2400 mIsSleepMode=false
+09-15 23:13:35.084  1885  1885 D WallpaperService: mDeviceHeight : 2400, mDeviceWidth : 1080,mDeviceRotation  : 0
+09-15 23:13:35.084  2276  2276 I Launcher: setWallpaperOffsets
+09-15 23:13:35.085  1434  3435 D InputMethodManagerService: hideSoftInput
+09-15 23:13:35.085  1434  3435 V InputMethodManagerService: Client requesting input be hidden
+09-15 23:13:35.085  1434  3435 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+09-15 23:13:35.085  1434  3435 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.hideSoftInput:4294 com.android.internal.view.IInputMethodManager$Stub.onTransact:488 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> <bottom of call stack> <bottom of call stack> 
+09-15 23:13:35.085  2276  2276 I DecorView: notifyKeepScreenOnChanged: keepScreenOn=false
+09-15 23:13:35.085 13483 13483 I cesb    : onResume
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309 alpha=0.0
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan} ty=APPLICATION_STARTING fmt=TRANSLUCENT wanim=0x1030309 alpha=0.0
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fl=81030118
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   pfl=16000010
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   bhv=DEFAULT
+09-15 23:13:35.086  1885  1955 I ViewRootImpl@2e40193[sortiva]:   fitSides= naviIconColor=0}
+09-15 23:13:35.088  2276  4924 I Launcher: DisplayMetrics from Resources : DisplayMetrics{density=2.8125, width=1080, height=2280, scaledDensity=2.8125, xdpi=409.432, ydpi=411.891}
+09-15 23:13:35.088  2276  2594 I SPayUpdater: updateSpayHandler, show = true, defaultPage = false
+09-15 23:13:35.088  2276  4924 I Launcher: realMetrics from Wm : DisplayMetrics{density=2.8125, width=1080, height=2400, scaledDensity=2.8125, xdpi=409.432, ydpi=411.891}
+09-15 23:13:35.088  2276  4924 I Launcher: Launcher DeviceProfile onResume availSize: 1080x2322 windowSize: 1080x2400 isLandscape: false
+09-15 23:13:35.088  1434  1434 I Pageboost: package null
+09-15 23:13:35.089  2871  2871 E pageboostd: Received HALT command code 2
+09-15 23:13:35.089  1434  1463 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_CRASHING_ACTIVITY_CLOSE enter=false frame=Rect(0, 0 - 1080, 2280) insets=Rect(0, 0 - 0, 0) surfaceInsets=Rect(0, 0 - 0, 0)
+09-15 23:13:35.090  1434  1463 D WindowManager: Loading animation for app transition. transit=TRANSIT_OLD_CRASHING_ACTIVITY_CLOSE enter=true frame=Rect(0, 0 - 1080, 2400) insets=Rect(0, 78 - 0, 42) surfaceInsets=Rect(0, 0 - 0, 0)
+09-15 23:13:35.090  1434  1463 E WindowManager: win=Window{48141d3 u0 Splash Screen com.sortiva EXITING} destroySurfaces: appStopped=false cleanupOnResume=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.onExitAnimationDone:6000 com.android.server.wm.ActivityRecord$$ExternalSyntheticLambda10.accept:2 java.util.ArrayList.forEach:1621 com.android.server.wm.ActivityRecord.onAnimationFinished:8607 com.android.server.wm.ActivityRecord.postApplyAnimation:6252 com.android.server.wm.ActivityRecord.commitVisibility:6224 com.android.server.wm.ActivityRecord.commitVisibility:6228 
+09-15 23:13:35.091  1434  1463 I WindowManager: Destroying surface Surface(name=Splash Screen com.sortiva$_1885)/@0x7398101 called by com.android.server.wm.WindowStateAnimator.destroySurface:942 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:536 com.android.server.wm.WindowState.destroySurfaceUnchecked:4309 com.android.server.wm.WindowState.destroySurface:4283 com.android.server.wm.WindowState.onExitAnimationDone:6000 com.android.server.wm.ActivityRecord$$ExternalSyntheticLambda10.accept:2 java.util.ArrayList.forEach:1621 com.android.server.wm.ActivityRecord.onAnimationFinished:8607 
+09-15 23:13:35.093  1434  1463 D InputTransport: Input channel destroyed: '48141d3', fd=156
+09-15 23:13:35.093  1434  1463 W InputManager-JNI: Input channel object '48141d3 Splash Screen com.sortiva (client)' was disposed without first being removed with the input manager!
+09-15 23:13:35.093  1434  1463 D InputTransport: Input channel destroyed: '48141d3', fd=770
+09-15 23:13:35.093  1434  1463 V WindowManager: Nulling last startingData
+09-15 23:13:35.094  1434  1463 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339}
+09-15 23:13:35.094  1434  1463 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}
+09-15 23:13:35.095   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:35.095   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e4800 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#78
+09-15 23:13:35.095   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e28e00 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | Splash Screen com.sortiva$_1885#41298
+09-15 23:13:35.095   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:35.095   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e5580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1885#85
+09-15 23:13:35.095   908   908 D SurfaceFlinger: 
+09-15 23:13:35.099  1885  1940 D Bubbles : onLocusVisibilityChanged: LocusId[17_chars] visible=true
+09-15 23:13:35.099  1434  2031 V WindowManager: Relayout Window{7a4e2c6 u0 com.android.systemui.ImageWallpaper}: viewVisibility=0 req=2400x2400 d0
+09-15 23:13:35.102  2276  2276 I MSHandlerLifeCycle: removeMultiSplitHandler: no exist. decor=DecorView@6f1a652[LauncherActivity]
+09-15 23:13:35.102  1434  3435 W WindowManager: Failed looking up window session=Session{f3781f6 1885:u0a10045} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6618 com.android.server.wm.WindowManagerService.relayoutWindow:2515 com.android.server.wm.Session.relayout:274 
+09-15 23:13:35.102  1434  2031 V WindowManager: Relayout hash=7a4e2c6, pid=1885, syncId=-1: mAttrs={(0,0)(2400x2400) gr=TOP START CENTER layoutInDisplayCutoutMode=always ty=WALLPAPER fmt=RGBX_8888 wanim=0x103031a
+09-15 23:13:35.102  1434  2031 V WindowManager:   fl=14318
+09-15 23:13:35.102  1434  2031 V WindowManager:   pfl=2000014
+09-15 23:13:35.102  1434  2031 V WindowManager:   bhv=DEFAULT naviIconColor=0}
+09-15 23:13:35.102   908   908 I Layer   : id=41298 removeFromCurrentState Splash Screen com.sortiva$_1885#41298 (138)
+09-15 23:13:35.102   908   908 I Layer   : Layer [Splash Screen com.sortiva$_1885#41298] hidden!! flag(1)
+09-15 23:13:35.102   908   908 I Layer   : id=41297 removeFromCurrentState 48141d3 Splash Screen com.sortiva#41297 (138)
+09-15 23:13:35.103   908   908 I Layer   : Layer [com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305] hidden!! flag(0)
+09-15 23:13:35.103   908   908 I SurfaceFlinger: id=41297 Removed 48141d3 Splash Screen com.sortiva#41297 (138)
+09-15 23:13:35.103   908   908 I Layer   : id=41297 Destroyed 48141d3 Splash Screen com.sortiva#41297
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: performTraversals params={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   fl=81910100
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   pfl=1e020040
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   vsysui=1700
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-15 23:13:35.103  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   fitSides= naviIconColor=0}
+09-15 23:13:35.104  1885  1955 D InsetsController: onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 0, 0), mDisplayCutout=DisplayCutout{insets=Rect(0, 0 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=0 displayHeight=0 physicalDisplayWidth=0 physicalDisplayHeight=0 density={0.0} cutoutSpec={} rotation={0} scale={0.0} physicalPixelDisplaySizeRatio={0.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=0, center=Point(0, 0)}, RoundedCorner{position=TopRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomRight, radius=0, center=Point(0, 0)}, RoundedCorner{position=BottomLeft, radius=0, center=Point(0, 0)}]}  mRoundedCornerFrame=Rect(0, 0 - 0, 0), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=null rotation=0}, mSources= {  } host=Splash Screen com.sortiva from=android.view.ViewRootImpl.relayoutWindow:9802
+09-15 23:13:35.104  1434  2064 D InputDispatcher: Focus entered window (0): cf6ba73 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+09-15 23:13:35.105  1885  1885 I BLASTBufferQueue: update, w= 2400 h= 2400 mName = Wallpaper mNativeObject= 0xb40000712fec8180 sc.mNativeObject= 0xb40000710bf81180 format= 2 caller= android.service.wallpaper.WallpaperService$Engine.getOrCreateBLASTSurface:2575 android.service.wallpaper.WallpaperService$Engine.updateSurface:1527 android.service.wallpaper.WallpaperService$Engine.reportVisibility:1902 android.service.wallpaper.WallpaperService$Engine.doVisibilityChanged:1872 android.service.wallpaper.WallpaperService$IWallpaperEngineWrapper.executeMessage:2842 com.android.internal.os.HandlerCaller$MyHandler.handleMessage:44 
+09-15 23:13:35.105  1885  1885 D WallpaperService: reportVisibility onVisibilityChanged visible: true
+09-15 23:13:35.105   908   950 I SurfaceFlinger: id=41302 Removed 8899a0c ActivityRecordInputSink com.sortiva/.MainActivity#41302 (137)
+09-15 23:13:35.105  1885  2080 I ImageWallpaper[GLEngine]:  onVisibilityChanged true , 0
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   fl=81910100
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   pfl=1e020040
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   vsysui=1700
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-15 23:13:35.106  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]:   fitSides= naviIconColor=0}
+09-15 23:13:35.106  1885  1955 I BLASTBufferQueue: [ViewRootImpl@2e40193[sortiva]#2377](f:0,a:1) destructor()
+09-15 23:13:35.106  1885  1955 D BufferQueueConsumer: [ViewRootImpl@2e40193[sortiva]#2377(BLAST Consumer)2377](id:75d00000949,api:0,p:-1,c:1885) disconnect
+09-15 23:13:35.106   908   950 I SurfaceFlinger: id=41306 createSurf flag=24004, Task=2702#41306
+09-15 23:13:35.106  1434  2031 D WALLPAPER_SVC:WallpaperManagerService: getWallpaperSafeLocked, userId = 0, which = 1, caller = com.android.server.wallpaper.WallpaperManagerService.semGetWallpaperType:6825 
+09-15 23:13:35.106  1434  2031 D WallpaperManagerService: which : 1, return type : 0 (called by userId= 0)
+09-15 23:13:35.108  1885  1955 I ViewRootImpl@2e40193[sortiva]: 1) Force to draw a frame when frame become empty from non-empty
+09-15 23:13:35.108   908   950 I SurfaceFlinger: id=41298 Removed Splash Screen com.sortiva$_1885#41298 (138)
+09-15 23:13:35.108  1885  1955 I ViewRootImpl@2e40193[sortiva]: Relayout returned: old=(0,0,1080,2400) new=(0,0,0,0) req=(1080,2400)8 dur=20 res=0x0 s={false 0x0} ch=true seqId=0
+09-15 23:13:35.108  1885  2080 I ImageWallpaperRenderer: updateWallpaperOffset 0 lastCropOffset 0 , wp Type 0 , rotation 0 , allowed true Do not change Display offset 0
+09-15 23:13:35.109   908   908 D SurfaceFlinger: Display 0 HWC layers:
+09-15 23:13:35.109   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e4800 | 0100 | RGBx_8888    |  660.0    0.0 1740.0 2400.0 |    0    0 1080 2400 | Wallpaper BBQ wrapper#78
+09-15 23:13:35.109   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b53e29280 | 0100 | RGBA_8888    |    0.0    0.0 1080.0 2400.0 |    0    0 1080 2400 | com.sec.android.app.launcher/com.sec[...]ivities.LauncherActivity$_2276#41305
+09-15 23:13:35.109   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b52256580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0   78.0 |    0    0 1080   78 | StatusBar$_1885#90
+09-15 23:13:35.109   908   908 D SurfaceFlinger:      DEVICE | 0xb400007b1f8e5580 | 0100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2265 1080 2400 | NavigationBar0$_1885#85
+09-15 23:13:35.109   908   908 D SurfaceFlinger: 
+09-15 23:13:35.110  1434  1463 D ActivityTaskManager: mStartingWindow and mStartingData is null for token=ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339}
+09-15 23:13:35.112  1434  3435 V WindowManager: Relayout Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=1080x2400 d0
+09-15 23:13:35.112  1885  1955 I ViewRootImpl@2e40193[sortiva]: dispatchDetachedFromWindow
+09-15 23:13:35.114   908   908 I Layer   : id=41296 removeFromCurrentState ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}#41296 (138)
+09-15 23:13:35.114   908   908 I Layer   : id=41302 removeFromCurrentState 8899a0c ActivityRecordInputSink com.sortiva/.MainActivity#41302 (138)
+09-15 23:13:35.114   908   908 I Layer   : id=41295 removeFromCurrentState Task=2702#41295 (138)
+09-15 23:13:35.114   908   908 I Layer   : id=41306 removeFromCurrentState Task=2702#41306 (138)
+09-15 23:13:35.114   908   908 I SurfaceFlinger: id=41296 Removed ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}#41296 (138)
+09-15 23:13:35.114   908   908 I SurfaceFlinger: id=41306 Removed Task=2702#41306 (138)
+09-15 23:13:35.114   908   908 I BufferQueueDebug: [Splash Screen com.sortiva$_1885#41298](this:0xb400007b1fac9838,id:-1,api:0,p:-1,c:908) onDestructor()
+09-15 23:13:35.114   908   908 I Layer   : id=41298 Destroyed Splash Screen com.sortiva$_1885#41298
+09-15 23:13:35.114   908   908 I Layer   : id=41306 Destroyed Task=2702#41306
+09-15 23:13:35.114   908   908 I Layer   : id=41296 Destroyed ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t2702}#41296
+09-15 23:13:35.114   908   908 I Layer   : id=41302 Destroyed 8899a0c ActivityRecordInputSink com.sortiva/.MainActivity#41302
+09-15 23:13:35.117  1434  3435 V WindowManager: Relayout hash=cf6ba73, pid=2276, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=nothing forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x10302f4
+09-15 23:13:35.117  1434  3435 V WindowManager:   fl=81910100
+09-15 23:13:35.117  1434  3435 V WindowManager:   pfl=1e020040
+09-15 23:13:35.117  1434  3435 V WindowManager:   vsysui=1700
+09-15 23:13:35.117  1434  3435 V WindowManager:   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-15 23:13:35.117  1434  3435 V WindowManager:   fitSides= naviIconColor=0}
+09-15 23:13:35.119  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: updateBlastSurfaceIfNeeded mBlastBufferQueue=0xb40000712cdf1200 isSameSurfaceControl=true
+09-15 23:13:35.120  2276  2276 I BLASTBufferQueue: update, w= 1080 h= 2400 mName = ViewRootImpl@aec4b3e[LauncherActivity] mNativeObject= 0xb40000712cdf1200 sc.mNativeObject= 0xb40000712e487de0 format= -2 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2898 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 
+09-15 23:13:35.120  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=13 res=0x0 s={true 0xb40000712e20d000} ch=false seqId=0
+09-15 23:13:35.121  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: handleResized, msg = 5 frames=ClientWindowFrames{frame=[0,0][1080,2400] display=[0,0][1080,2400] parentFrame=[0,0][0,0] parentClippedByDisplayCutout=false} forceNextWindowRelayout=false displayId=0 resizeMode=-1 frameChanged=false displayFrameChanged=false configChanged=false displayChanged=false
+09-15 23:13:35.121  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: handleResized mSyncSeqId = 0
+09-15 23:13:35.121  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: reportNextDraw android.view.ViewRootImpl.handleResized:2450 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6728 android.view.ViewRootImpl$ViewRootHandler.handleMessage:6697 android.os.Handler.dispatchMessage:106 
+09-15 23:13:35.121  2276  2276 I BaseActivity: addActivityFlags, flags : 4
+09-15 23:13:35.121  2276  2276 I Launcher: onDeferredResumed
+09-15 23:13:35.122  2276  2276 I InstallShortcutReceiver: flushInstallQueue 0
+09-15 23:13:35.122  2276  2276 I Launcher.NotificationListener: onNotificationFullRefresh
+09-15 23:13:35.122  2276  2276 I BadgeCountUpdaterImpl: onNotificationsChangedConnected
+09-15 23:13:35.122  2276  2276 W LauncherAppWidgetHost: setShouldListenFlag, mFlags:7 flag:resume on:true isFront:false
+09-15 23:13:35.122  2276  2276 W Launcher: onEnterAnimationComplete
+09-15 23:13:35.122  2276  2276 W Launcher: onEnterAnimationComplete
+09-15 23:13:35.122  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 1 0
+09-15 23:13:35.122  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb40000712e20d000}
+09-15 23:13:35.122  2276  2276 I BaseActivity: addActivityFlags, flags : 8
+09-15 23:13:35.122  1434  2031 W WindowManager: Failed looking up window session=Session{f3781f6 1885:u0a10045} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6618 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:1090 android.view.IWindowSession$Stub.onTransact:1319 
+09-15 23:13:35.122  1434  2031 E WindowManager: setOnBackInvokedCallback(): No window state for package:com.android.systemui
+09-15 23:13:35.123  2276  2593 I InstallShortcutReceiver: flushQueueInBackground 0
+09-15 23:13:35.123  2276  2276 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-15 23:13:35.123  1434  1678 W WindowManager: Failed looking up window session=Session{f3781f6 1885:u0a10045} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6618 com.android.server.wm.WindowManagerService.removeWindow:2287 com.android.server.wm.Session.remove:236 
+09-15 23:13:35.124   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409728, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.124   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409728, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.124  1885  1955 D InputTransport: Input channel destroyed: '48141d3', fd=138
+09-15 23:13:35.126  1434  2031 V InputMethodManagerService: hideCurrentInputLocked : canceled, shouldHideSoftInput=false, mInputShown=false, mImeWindowVis=0
+09-15 23:13:35.126  1434  2031 I InputMethodBindingController: setCurrentMethodNotVisible: mVisibleBound=false, mHasConnection=true, caller = com.android.server.inputmethod.InputMethodManagerService.hideCurrentInputLocked:4356 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocusInternalLocked:4783 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocusInternal:4440 com.android.server.inputmethod.InputMethodManagerService.startInputOrWindowGainedFocus:4379 com.android.internal.view.IInputMethodManager$Stub.onTransact:518 com.android.server.inputmethod.InputMethodManagerService.onTransact:2302 android.os.Binder.execTransactInternal:1316 android.os.Binder.execTransact:1280 <bottom of call stack> <bottom of call stack> 
+09-15 23:13:35.127  1434  2031 D InputMethodManagerService: mDesktopModeManager null!
+09-15 23:13:35.127  1434  2031 V InputMethodManagerService: getDisplayIdOfInputMethodWindowToBeAdded: displayId=0
+09-15 23:13:35.127  1434  2031 D InputMethodManagerService: isImeSwitcherDisabledPackage : false
+09-15 23:13:35.129  1434  2031 D InputMethodManagerService: shouldShowImeSwitcherLocked : checking vis : 3
+09-15 23:13:35.129  1434  2031 D InputMethodManagerService: checkDisplayOfStartInputAndUpdateKeyboard: displayId=0, mFocusedDisplayId=0
+09-15 23:13:35.130  1434  2031 D InputTransport: Input channel constructed: 'ClientS', fd=156
+09-15 23:13:35.130  1434  2031 D InputTransport: Input channel destroyed: 'ClientS', fd=156
+09-15 23:13:35.130  2276  2593 I Launcher.NotificationListener: Full refresh isConnected : true active size : 0
+09-15 23:13:35.130  2276  2276 I LauncherRootView: handleSystemWindowInsets Rect(0, 78 - 0, 42)
+09-15 23:13:35.130  5305  5305 I HBD     : HoneyBoardService onFinishInput 
+09-15 23:13:35.131  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Setup new sync id=783
+09-15 23:13:35.131  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: Setting syncFrameCallback
+09-15 23:13:35.131  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: registerCallbacksForSync syncBuffer=false
+09-15 23:13:35.131  5305  5305 I HBD     : a IC have been unbinding,  RemoteInputConnection{idHash=#28affc2}
+09-15 23:13:35.131  5305  5305 I HBD     : HoneyBoardService [PF_CL][onFinishInput]  1 ms 
+09-15 23:13:35.131  5305  5305 I HBD     : HoneyBoardService [IMI] onStartInput - caller pid : 2276 , caller uid : 10125 
+09-15 23:13:35.131  5305  5305 I HBD     : j updateConfigs 
+09-15 23:13:35.131  5305  5305 I HBD     : j isEnabledNightMode : true 
+09-15 23:13:35.131  5305  5305 I HBD     : a IC have been binding, RemoteInputConnection{idHash=#28affc2} 
+09-15 23:13:35.131  5305  5305 I HBD     : h [EditorInputType]setPrivateImeOptionsToTable privateImeOptions ( null )
+09-15 23:13:35.131  5305  5305 I HBD     : b incognitoMode : false 
+09-15 23:13:35.132  2276  2276 I BadgeRenderer: Invalid count : 0
+09-15 23:13:35.132  5305  5305 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-15 23:13:35.133  3316  3547 D KnoxHelper: getActivityList callingUserId: 0, target user: 0
+09-15 23:13:35.133  2276  2276 I BadgeRenderer: Invalid count : 0
+09-15 23:13:35.132  5305  5305 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-15 23:13:35.133  5305  5305 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-15 23:13:35.133  5305  5305 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-15 23:13:35.134  5305  5305 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-15 23:13:35.134  1237  1237 D connsyslogger: Open FIFO for close
+09-15 23:13:35.134  5305  5305 I HBD     : b update cached prediction status : false 
+09-15 23:13:35.134  5305  5305 I HBD     : h getDefaultInputRange : UNKNOWN 
+09-15 23:13:35.134  5305  5305 I HBD     : a currentState : 0 
+09-15 23:13:35.135  5305  5305 I HBD     : a [UpdatePolicy] [post] a: 0 cl: 2293760 kit: [0/0] vt: 0 ir: 1 
+09-15 23:13:35.135  2276  4021 I ViewRootImpl@aec4b3e[LauncherActivity]: Received frameDrawingCallback syncResult=0 frameNum=2.
+09-15 23:13:35.135  2276  4021 I ViewRootImpl@aec4b3e[LauncherActivity]: Setting up sync and frameCommitCallback
+09-15 23:13:35.135  5305  5305 I HBD     : a [NRIC] resetNoResponseState 
+09-15 23:13:35.135  5305  5305 I HBD     : b needOff = true , isForceOff = false, isNullInputClass : true 
+09-15 23:13:35.135  5305  5305 I HBD     : b update cached prediction status : false 
+09-15 23:13:35.136  5305  5305 I HBD     : HoneyBoardService [PF_OP][onStartInput]  5 ms 
+09-15 23:13:35.142  2276  3699 I ViewRootImpl@aec4b3e[LauncherActivity]: Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true
+09-15 23:13:35.142  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: onSyncComplete
+09-15 23:13:35.142  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: setupSync seqId=0 mSyncId=783 fn=2 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+09-15 23:13:35.142  2276  2276 I ViewRootImpl@aec4b3e[LauncherActivity]: reportDrawFinished seqId=0 mSyncId=-1 fn=2 mSurfaceChangedTransaction=0xb4000071c3282a00
+09-15 23:13:35.143  2276  2276 I RecentsView: onTaskRemoved() taskId : 2702
+09-15 23:13:35.143  2276  2276 I TopTaskTracker: onTaskRemoved : taskId = 2702
+09-15 23:13:35.143  2276  2276 I RecentsView: onTaskRemoved() taskId : 2702
+09-15 23:13:35.143  2276  2276 I TopTaskTracker: onTaskRemoved : taskId = 2702
+09-15 23:13:35.143  2276  2276 I PopupDataProvider: onNotificationFullRefresh prev dotInfoSize : 0
+09-15 23:13:35.143  1434  2064 D WindowManager: finishDrawingWindow: Window{cf6ba73 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} mDrawState=HAS_DRAWN seqId=0
+09-15 23:13:35.146   856   870 I mtkpower@impl: [setMode] type:5, enabled:0
+09-15 23:13:35.203  1885  1891 I ndroid.systemui: NativeAlloc concurrent copying GC freed 12MB AllocSpace bytes, 91(1932KB) LOS objects, 49% free, 22MB/45MB, paused 271us,99us total 281.941ms
+09-15 23:13:35.208  1885  1961 D OpenGLRenderer: setSurface called with nullptr
+09-15 23:13:35.209  1885  1961 D OpenGLRenderer: setSurface called with nullptr
+09-15 23:13:35.211  1885  1893 W System  : A resource failed to call release. 
+09-15 23:13:35.211   908  1971 D SurfaceFlinger: [SF client] REMOVE (0xb400007b53e784c0) for (1885:com.android.systemui)
+09-15 23:13:35.211  1885  1893 W System  : A resource failed to call release. 
+09-15 23:13:35.211   908  1971 I SurfaceFlinger: id=41251 Removed Task=2700#41251 (134)
+09-15 23:13:35.211  1885  1893 W System  : A resource failed to call release. 
+09-15 23:13:35.211   908   949 I SurfaceFlinger: id=41240 Removed Task=2699#41240 (134)
+09-15 23:13:35.211   908  1971 D SurfaceFlinger: [SF client] REMOVE (0xb400007b1f98cd40) for (1885:com.android.systemui)
+09-15 23:13:35.213   908   908 I Layer   : id=41251 Destroyed Task=2700#41251
+09-15 23:13:35.213   908   908 I Layer   : id=41240 Destroyed Task=2699#41240
+09-15 23:13:35.221   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409729, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.221   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409729, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.236   842   842 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:85.087051,dur:1010.73,max:31.51,min:6.41  
+09-15 23:13:35.316   851 10553 I mtkpower_client: perf_lock_rel, hdl:15461, tid:10553
+09-15 23:13:35.317   851 10553 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10553
+09-15 23:13:35.317   856   896 I libPowerHal: [perfLockRel] hdl:15461, idx:2
+09-15 23:13:35.317   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:35.317   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:35.317   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15463 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15463
+09-15 23:13:35.317   851 10553 I mtkpower_client: ret_hdl:15463
+09-15 23:13:35.317   851 10553 I mtkpower_client: perf_lock_rel, hdl:15462, tid:10553
+09-15 23:13:35.318   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:35.318   851 10553 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10553
+09-15 23:13:35.318   856   896 I libPowerHal: [perfLockRel] hdl:15462, idx:3
+09-15 23:13:35.318   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:35.319   851 10553 I mtkpower_client: ret_hdl:15464
+09-15 23:13:35.319   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15464 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15464
+09-15 23:13:35.319   851 10553 I mtkpower_client: perf_lock_rel, hdl:15460, tid:10553
+09-15 23:13:35.319   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:35.319   851 10553 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10553
+09-15 23:13:35.319   856   896 I libPowerHal: [perfLockRel] hdl:15460, idx:1
+09-15 23:13:35.319   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000, param:-1
+09-15 23:13:35.320   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000 param:-1
+09-15 23:13:35.320   851 10553 I mtkpower_client: ret_hdl:15465
+09-15 23:13:35.320   856   896 I libPowerHal: [perfLockAcq] idx:1 hdl:15465 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15465
+09-15 23:13:35.320   851 10553 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1444415
+09-15 23:13:35.320   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000, param:0
+09-15 23:13:35.320   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000 param:0
+09-15 23:13:35.326   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409730, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.326   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409730, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.379  1434  1462 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{ce6f55 u0 com.sortiva/.MainActivity} t-1 f}}
+09-15 23:13:35.379  1434  1462 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=true r=ActivityRecord{d7dc203 u0 com.sec.android.app.launcher/.activities.LauncherActivity} t2339} caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateIfNeeded:2535 com.android.server.wm.ActivityTaskSupervisor.handleTopResumedStateReleased:2564 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessageInner:2990 com.android.server.wm.ActivityTaskSupervisor$ActivityTaskSupervisorHandler.handleMessage:2888 android.os.Handler.dispatchMessage:106 android.os.Looper.loopOnce:226 
+09-15 23:13:35.418  5232 10577 W adbd    : timed out while waiting for FUNCTIONFS_BIND, trying again
+09-15 23:13:35.418  5232 10577 I adbd    : UsbFfs: connection terminated: monitor thread finished
+09-15 23:13:35.426   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409731, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.427   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409731, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.432   811   811 E audit   : type=1400 audit(1789488815.431:61506): avc:  denied  { write } for  pid=23521 comm="ThreadPoolForeg" name="traced_producer" dev="tmpfs" ino=17055 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 SEPF_SM-M325FV_12_0001 audit_filtered
+09-15 23:13:35.432   811   811 E audit   : type=1300 audit(1789488815.431:61506): arch=c00000b7 syscall=203 success=no exit=-13 a0=7c a1=b400007115b98840 a2=1e a3=ffffffff95588341 items=0 ppid=828 pid=23521 auid=4294967295 uid=10219 gid=10219 euid=10219 suid=10219 fsuid=10219 egid=10219 sgid=10219 fsgid=10219 tty=(none) ses=4294967295 comm="ThreadPoolForeg" exe="/system/bin/app_process64" subj=u:r:gmscore_app:s0:c512,c768 key=(null)
+09-15 23:13:35.432   811   811 E audit   : type=1327 audit(1789488815.431:61506): proctitle="com.google.android.gms"
+09-15 23:13:35.456  5232  5238 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+09-15 23:13:35.527   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409732, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.527   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409732, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.598  1434  1757 I SemWifiServiceDetector: Traff. tracking started
+09-15 23:13:35.628   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409733, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:35.628   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409733, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:35.722   851 10554 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 5836248
+09-15 23:13:35.741   851 10556 I mtkpower_client: perf_lock_rel, hdl:15463, tid:10556
+09-15 23:13:35.741   851 10556 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10556
+09-15 23:13:35.741   856   896 I libPowerHal: [perfLockRel] hdl:15463, idx:0
+09-15 23:13:35.741   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:35.741   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:35.742   851 10556 I mtkpower_client: ret_hdl:15466
+09-15 23:13:35.742   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15466 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15466
+09-15 23:13:35.742   851 10556 I mtkpower_client: perf_lock_rel, hdl:15464, tid:10556
+09-15 23:13:35.742   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:35.742   851 10556 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10556
+09-15 23:13:35.742   856   896 I libPowerHal: [perfLockRel] hdl:15464, idx:2
+09-15 23:13:35.742   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:35.742   851 10556 I mtkpower_client: ret_hdl:15467
+09-15 23:13:35.743   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15467 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15467
+09-15 23:13:35.743   851 10556 I mtkpower_client: perf_lock_rel, hdl:15465, tid:10556
+09-15 23:13:35.743   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:35.743   851 10556 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10556
+09-15 23:13:35.743   856   896 I libPowerHal: [perfLockRel] hdl:15465, idx:1
+09-15 23:13:35.743   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000, param:-1
+09-15 23:13:35.743   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1000000 param:-1
+09-15 23:13:35.744   851 10556 I mtkpower_client: ret_hdl:15468
+09-15 23:13:35.744   856   896 I libPowerHal: [perfLockAcq] idx:1 hdl:15468 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15468
+09-15 23:13:35.744   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000, param:0
+09-15 23:13:35.744   851 10556 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1050540
+09-15 23:13:35.744   856   896 I libPowerHal: [PE] vendor.samsung. update cmd:1000000 param:0
+09-15 23:13:35.764  1885  1991 D MobileStatusTracker(1/3): onSignalStrengthsChanged level=4, vendorLevel=3
+09-15 23:13:35.766  1885  1991 D MobileSignalController(1/3): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=3, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+09-15 23:13:35.766  1885  1991 D NetworkController: SignalStrength from intent slotId=1
+09-15 23:13:35.796   851 10588 I mtkpower_client: perf_lock_rel, hdl:15466, tid:10588
+09-15 23:13:35.796   851 10588 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10588
+09-15 23:13:35.796   856   896 I libPowerHal: [perfLockRel] hdl:15466, idx:0
+09-15 23:13:35.796   856   896 I libPowerHal: [PD] vendor.samsung. update cmd:1c3c000, param:1
+09-15 23:13:35.796   856   896 I libPowerHal: [PD] (less) /proc/mcdi/state set +prefix:enable 1;
+09-15 23:13:35.797   856   896 I libPowerHal: [perfLockAcq] idx:0 hdl:15469 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15469
+09-15 23:13:35.797   851 10588 I mtkpower_client: ret_hdl:15469
+09-15 23:13:35.797   856   896 I libPowerHal: [PE] (less) /proc/mcdi/state set +prefix:enable 0;
+09-15 23:13:35.797   851 10588 I mtkpower_client: perf_lock_rel, hdl:15467, tid:10588
+09-15 23:13:35.797   851 10588 I mtkpower_client: perf_lock_acq, hdl:0, dur:0, num:2, tid:10588
+09-15 23:13:35.797   856   896 I libPowerHal: [perfLockRel] hdl:15467, idx:2
+09-15 23:13:35.797   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: -1 -1 -1 -1
+09-15 23:13:35.798   851 10588 I mtkpower_client: ret_hdl:15470
+09-15 23:13:35.798   856   896 I libPowerHal: [perfLockAcq] idx:2 hdl:15470 hint:-1 pid:851 duration:0 lock_user:vendor.samsung. => ret_hdl:15470
+09-15 23:13:35.798   856   896 I libPowerHal: vendor.samsung.: cpu_ctrl set cpu freq: 1800000 -1 -1 -1
+09-15 23:13:35.798   851 10588 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 1069481
+09-15 23:13:35.814   581   581 D io_stats: !@ 179,0 r 11313456 202373578 w 10816186 171850132 d 0 0 f 0 0 iot 10945920 0 th 0 0 0 pt 0 inp 0 0 127473.402
+09-15 23:13:35.922  3404  4335 I SDHMS:D : SIOP:: AP:367 BAT:360 USB:0 CHG:357 PA:362 BLK:0 SUBBAT:0 SKIN:357 SKINF:357 SKINB:356 LRP:365 LRP2:357 LRF:365 LRB:364 LRF2:357 LRB2:356 AP2:357 CHG2:353 VAP:365 
+09-15 23:13:35.987  1434  1445 I system_server: NativeAlloc concurrent copying GC freed 21MB AllocSpace bytes, 22(592KB) LOS objects, 19% free, 98MB/122MB, paused 2.251ms,673us total 1.002s
+09-15 23:13:35.990  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.990  1434  1447 W System  : A resource failed to call release. 
+09-15 23:13:35.990  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.991  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.991   908   949 I SurfaceFlinger: id=41264 Removed Task=2701#41264 (132)
+09-15 23:13:35.991  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.991  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.991  1434  1447 W System  : A resource failed to call HardwareBuffer.close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.992  1434  1447 W System  : A resource failed to call close. 
+09-15 23:13:35.993  1434  1447 W System  : A resource failed to call release. 
+09-15 23:13:36.001   908   908 I Layer   : id=41264 Destroyed Task=2701#41264
+09-15 23:13:36.005   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409734, screenshot (Wallpaper BBQ wrapper#78)
+09-15 23:13:36.005   908   908 I SurfaceFlinger: operator()(), mtkRenderCntDebug 409734, screenshot (com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity$_2276#41305)
+09-15 23:13:36.009  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:36.010  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:36.010  1434  1482 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+09-15 23:13:36.019  1434  5339 D SGM:GameManager: identifyGamePackage. com.sec.android.app.launcher, mCurrentUserId: 0, callerUserId: 0, callingMethodInfo: com.android.server.ssrm.SortingMachine.isGame(SortingMachine.java:162)
+09-15 23:13:36.019  1434  5339 D SGM:PkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+09-15 23:13:36.100  1434  1757 D SemNscXgbMsL1: Probability - Cloud gaming: [0.034541234]
+09-15 23:13:36.100  1434  1757 D SemNscXgbMsL1: Probability - Real time: [0.27819014]
+09-15 23:13:36.100  1434  1757 D SemNscXgbMsL1: Probability - Non real time: [0.8277758]
+09-15 23:13:36.100  1434  1757 D SemNscXgbMsL1: 1 sample inference time: 0.369462 msecs
+09-15 23:13:36.100  1434  1757 D SemNscXgbL2Rt: L2 RT 1 sample inference time: 0.581231 msecs
+09-15 23:13:36.101  1434  1757 D SemNscXgbL2Nrt: L2 NRT 1 sample inference time: 0.513154 msecs
+09-15 23:13:36.134  2276  2594 I QuickstepModelDelegate: Widget predictions updated
+09-15 23:13:36.151  1434  1434 E Native_CFMS: nativePerfMgrRemoveTask    Fail    tid : -1    return : -1
+09-15 23:13:36.458  5232 10601 W adbd    : timed out while waiting for FUNCTIONFS_BIND, trying again
+09-15 23:13:36.458  5232 10601 I adbd    : UsbFfs: connection terminated: monitor thread finished
+09-15 23:13:36.471  3404  3685 I R0      : limitGPUFreq:: freq = 586000
+09-15 23:13:36.471  3404  3685 I SemDvfsHyPerManager: acquire hyper - SIOP_GPU_FREQ_MAX/3404@4, type = 536875010
+09-15 23:13:36.471  3404  3685 I R0      : limitCPUFreq:: freq = 1710000
+09-15 23:13:36.471  3404  3685 I SemDvfsHyPerManager: acquire hyper - SIOP_ARM_MAX/3404@2, type = 301993986
+09-15 23:13:36.471   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5808940  [3404 / 4]    HINT :      list : [GPUMaxFreq / 586000] 
+09-15 23:13:36.472   851   880 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 5802123  [3404 / 2]    HINT :      list : [CPUMaxFreq / 1710000] 
+09-15 23:13:36.492  5232  5238 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+09-15 23:13:36.492  5232  5232 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS=''; exec logcat '-d''
+09-15 23:13:36.497   851 10598 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 5839666
